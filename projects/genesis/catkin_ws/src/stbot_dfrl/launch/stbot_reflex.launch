@@ -1,0 +1,17 @@
+ <launch>
+ <machine name="st-pc"  address="st-pc" env-loader="/home/suntao/workspace/gorobots/projects/stbot/genesis/catkin_ws/src/stbot/config/stbot_env.zsh" user="suntao" />
+ <machine name="nuc"  address="nuc" env-loader="/home/sun/workspace/gorobots/utils/real_robots/stbot/catkin_ws/src/lilistbot/config/lilistbot_env.zsh" user="sun" />
+ <arg name="device_name"                default="/dev/XM430"/>
+ <arg name="baud_rate"                  default="4000000"/>
+
+ <arg name="scan_range"                 default="14"/>
+ <arg name="profile_velocity"           default="500"/> <!-- 500-->
+ <arg name="profile_acceleration"       default="25000"/> <!-- 25000-->
+ <arg name="ros_node_rate"              default="50"/>
+ <arg name="controller_args"			default="CPGPositions simTime terminateController startSimulation pauseSimulation stopSimulation enableSyncMode triggerNextStep simulationStepDone simulationState neuroNetworkOutput sensorValue reflexValue $(arg ros_node_rate) 4 12 23"/>
+<arg name="hostname"                    default="$(env ROS_HOSTNAME)" />
+
+ <node machine="$(arg hostname)" name="Reflex_node" pkg="stbot" type="stbot_FT_node.py" required="true" output="screen" args="$(arg controller_args)" />
+ 
+ </launch>
+

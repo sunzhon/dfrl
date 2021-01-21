@@ -1,0 +1,251 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ANN	ann.cpp	/^ANN::ANN()$/;"	f	class:ANN
+ANN	ann.cpp	/^ANN::ANN(int numneurons)$/;"	f	class:ANN
+ANN	ann.h	/^class ANN {$/;"	c
+ANN_H_	ann.h	21;"	d
+AnnList	ann.h	/^    typedef std::vector <ANN*>        AnnList;$/;"	t	class:ANN
+BACKPROPAGATION_H_	backpropagation.h	9;"	d
+Backpropagation	backpropagation.cpp	/^Backpropagation::Backpropagation()$/;"	f	class:Backpropagation
+Backpropagation	backpropagation.h	/^class Backpropagation {$/;"	c
+CIRCANN_H_	circann.h	9;"	d
+CircANN	circann.cpp	/^CircANN::CircANN(int numneurons) : ANN(numneurons) {$/;"	f	class:CircANN
+CircANN	circann.h	/^class CircANN : public ANN {$/;"	c
+LinearFunction	transferfunction.h	/^    LinearFunction(const double& m=1, const double& b=0):m(m),b(b) {}$/;"	f	class:LinearFunction
+LinearFunction	transferfunction.h	/^class LinearFunction : public TransferFunction {$/;"	c
+LinearThresholdFunction	transferfunction.h	/^    LinearThresholdFunction(const double& m=1, const double& b=0):m(m),b(b) {}$/;"	f	class:LinearThresholdFunction
+LinearThresholdFunction	transferfunction.h	/^class LinearThresholdFunction : public TransferFunction {$/;"	c
+LogisticFunction	transferfunction.h	/^class LogisticFunction : public TransferFunction {$/;"	c
+N	ann.cpp	/^unsigned int ANN::N() const$/;"	f	class:ANN
+N	circann.cpp	/^unsigned int CircANN::N() const$/;"	f	class:CircANN
+NEURON_H_	neuron.h	21;"	d
+Neuron	neuron.cpp	/^Neuron::Neuron()$/;"	f	class:Neuron
+Neuron	neuron.h	/^class Neuron {$/;"	c
+NeuronList	ann.h	/^    typedef std::vector <Neuron*>   NeuronList;$/;"	t	class:ANN
+NeuronMap	backpropagation.h	/^    typedef std::map<int, Neuron*> NeuronMap;$/;"	t	class:Backpropagation
+NeuronSet	backpropagation.h	/^    typedef std::set<Neuron*> NeuronSet;$/;"	t	class:Backpropagation
+NoiseType	circann.h	/^enum NoiseType{correlated, uncorrelated};$/;"	g
+PatternVector	backpropagation.h	/^    typedef std::vector<TrainingPattern*> PatternVector;$/;"	t	class:Backpropagation
+SYNAPSE_H_	synapse.h	21;"	d
+SignFunction	transferfunction.h	/^    SignFunction(const double& theta=1):theta(theta) {}$/;"	f	class:SignFunction
+SignFunction	transferfunction.h	/^class SignFunction : public TransferFunction {$/;"	c
+Synapse	synapse.cpp	/^Synapse::Synapse(Neuron * const apost, Neuron * const apre,$/;"	f	class:Synapse
+Synapse	synapse.h	/^class Synapse {$/;"	c
+SynapseList	neuron.h	/^    typedef std::map<Neuron const *, Synapse*> SynapseList;$/;"	t	class:Neuron
+SynapseListPair	neuron.h	/^    typedef std::pair<Neuron const *, Synapse*> SynapseListPair;$/;"	t	class:Neuron
+SynapseSet	backpropagation.h	/^    typedef std::set<Synapse*> SynapseSet;$/;"	t	class:Backpropagation
+TRANSFERFUNCTION_H_	transferfunction.h	21;"	d
+TanhFunction	transferfunction.h	/^class TanhFunction : public TransferFunction {$/;"	c
+ThresholdFunction	transferfunction.h	/^    ThresholdFunction(const double& theta=1):theta(theta) {}$/;"	f	class:ThresholdFunction
+ThresholdFunction	transferfunction.h	/^class ThresholdFunction : public TransferFunction {$/;"	c
+TrainingPattern	backpropagation.h	/^struct TrainingPattern{$/;"	s
+TransferFunction	transferfunction.h	/^    TransferFunction() {};$/;"	f	class:TransferFunction
+TransferFunction	transferfunction.h	/^class TransferFunction {$/;"	c
+_USE_MATH_DEFINES	transferfunction.h	25;"	d
+activity	neuron.h	/^    double activity;$/;"	m	class:Neuron
+addNeuron	ann.cpp	/^Neuron* ANN::addNeuron()$/;"	f	class:ANN
+addSubnet	ann.cpp	/^void ANN::addSubnet(ANN * subnet)$/;"	f	class:ANN
+addSynapse	ann.cpp	/^Synapse* ANN::addSynapse(Neuron * post, Neuron * pre)$/;"	f	class:ANN
+addSynapseIn	neuron.cpp	/^void Neuron::addSynapseIn(Synapse * synapse)$/;"	f	class:Neuron
+addSynapseOut	neuron.cpp	/^void Neuron::addSynapseOut(Synapse * synapse)$/;"	f	class:Neuron
+addTrainingPattern	backpropagation.cpp	/^void Backpropagation::addTrainingPattern(TrainingPattern* p)$/;"	f	class:Backpropagation
+angle	circann.h	/^	double angle;$/;"	m	class:CircANN
+b	ann.cpp	/^const double& ANN::b (const int neuron)$/;"	f	class:ANN
+b	ann.cpp	/^void ANN::b(Neuron* neuron, const double& abias)$/;"	f	class:ANN
+b	ann.cpp	/^void ANN::b(const int neuron, const double& abias)$/;"	f	class:ANN
+b	transferfunction.h	/^    double b;$/;"	m	class:LinearFunction
+b	transferfunction.h	/^    double b;$/;"	m	class:LinearThresholdFunction
+backpropagationStep	ann.cpp	/^void ANN::backpropagationStep()$/;"	f	class:ANN
+bias	neuron.h	/^    double bias;$/;"	m	class:Neuron
+correlated	circann.h	/^enum NoiseType{correlated, uncorrelated};$/;"	e	enum:NoiseType
+defaultTransferFunction	ann.h	/^    TransferFunction const* defaultTransferFunction;$/;"	m	class:ANN
+defineInputNeuron	backpropagation.cpp	/^void Backpropagation::defineInputNeuron(const int& index, Neuron* neuron)$/;"	f	class:Backpropagation
+defineOutputNeuron	backpropagation.cpp	/^void Backpropagation::defineOutputNeuron(const int& index, Neuron* neuron)$/;"	f	class:Backpropagation
+delta_weight	synapse.h	/^    double delta_weight;$/;"	m	class:Synapse
+derivative	transferfunction.h	/^    inline double derivative(const double& x) const {$/;"	f	class:LinearFunction
+derivative	transferfunction.h	/^    inline double derivative(const double& x) const {$/;"	f	class:LinearThresholdFunction
+derivative	transferfunction.h	/^    inline double derivative(const double& x) const {$/;"	f	class:LogisticFunction
+derivative	transferfunction.h	/^    inline double derivative(const double& x) const {$/;"	f	class:SignFunction
+derivative	transferfunction.h	/^    inline double derivative(const double& x) const {$/;"	f	class:TanhFunction
+derivative	transferfunction.h	/^    inline double derivative(const double& x) const {$/;"	f	class:ThresholdFunction
+dumpBiases	ann.cpp	/^std::string ANN::dumpBiases()$/;"	f	class:ANN
+dumpWeights	ann.cpp	/^std::string ANN::dumpWeights()$/;"	f	class:ANN
+dw	ann.cpp	/^const double ANN::dw(const int& post, const int& pre)$/;"	f	class:ANN
+dw	ann.cpp	/^void ANN::dw(Neuron* post, Neuron* pre, const double& aweight)$/;"	f	class:ANN
+dw	ann.cpp	/^void ANN::dw(const int& post, const int& pre, const double& aweight)$/;"	f	class:ANN
+error	neuron.h	/^    double error;$/;"	m	class:Neuron
+errorInput	neuron.h	/^    double errorInput;$/;"	m	class:Neuron
+excludeNeuronBias	backpropagation.cpp	/^void Backpropagation::excludeNeuronBias(Neuron * neuron)$/;"	f	class:Backpropagation
+feedForwardStep	ann.cpp	/^void ANN::feedForwardStep()$/;"	f	class:ANN
+func	neuron.h	/^    TransferFunction const * func;$/;"	m	class:Neuron
+getActivity	ann.cpp	/^const double& ANN::getActivity(Neuron const * neuron)$/;"	f	class:ANN
+getActivity	ann.cpp	/^const double& ANN::getActivity(const int neuron) const$/;"	f	class:ANN
+getActivity	neuron.cpp	/^const double& Neuron::getActivity() const$/;"	f	class:Neuron
+getAllNeurons	ann.cpp	/^std::vector<Neuron*> ANN::getAllNeurons() const$/;"	f	class:ANN
+getAllSynapses	ann.cpp	/^std::vector<Synapse*> ANN::getAllSynapses() const$/;"	f	class:ANN
+getB	transferfunction.h	/^    inline const double& getB() const{return b;}$/;"	f	class:LinearFunction
+getB	transferfunction.h	/^    inline const double& getB() const{return b;}$/;"	f	class:LinearThresholdFunction
+getBias	ann.cpp	/^const double& ANN::getBias(Neuron const * neuron)$/;"	f	class:ANN
+getBias	ann.cpp	/^const double& ANN::getBias(const int neuron) const$/;"	f	class:ANN
+getBias	neuron.cpp	/^const double& Neuron::getBias() const$/;"	f	class:Neuron
+getDefaultTransferFunction	ann.cpp	/^TransferFunction const* ANN::getDefaultTransferFunction() const$/;"	f	class:ANN
+getDeltaWeight	ann.cpp	/^const double ANN::getDeltaWeight(Neuron const * post, Neuron const * pre) const$/;"	f	class:ANN
+getDeltaWeight	ann.cpp	/^const double ANN::getDeltaWeight(const int& post, const int& pre) const$/;"	f	class:ANN
+getDeltaWeight	synapse.cpp	/^const double& Synapse::getDeltaWeight() const$/;"	f	class:Synapse
+getError	neuron.cpp	/^const double& Neuron::getError() const$/;"	f	class:Neuron
+getInput	ann.cpp	/^const double& ANN::getInput(Neuron const * neuron)$/;"	f	class:ANN
+getInput	ann.cpp	/^const double& ANN::getInput(const int neuron) const$/;"	f	class:ANN
+getInput	neuron.cpp	/^const double& Neuron::getInput() const$/;"	f	class:Neuron
+getInputScaling	ann.cpp	/^const double& ANN::getInputScaling(Neuron const * neuron)$/;"	f	class:ANN
+getInputScaling	ann.cpp	/^const double& ANN::getInputScaling(const int neuron) const$/;"	f	class:ANN
+getInputScaling	neuron.cpp	/^const double& Neuron::getInputScaling() const$/;"	f	class:Neuron
+getM	transferfunction.h	/^    inline const double& getM() const{return m;}$/;"	f	class:LinearFunction
+getM	transferfunction.h	/^    inline const double& getM() const{return m;}$/;"	f	class:LinearThresholdFunction
+getMaxRate	circann.cpp	/^double CircANN::getMaxRate() {$/;"	f	class:CircANN
+getNeuron	ann.cpp	/^Neuron* ANN::getNeuron(unsigned int const index)$/;"	f	class:ANN
+getNeuronNumber	ann.cpp	/^unsigned int ANN::getNeuronNumber() const$/;"	f	class:ANN
+getOutput	ann.cpp	/^const double& ANN::getOutput(Neuron const * neuron)$/;"	f	class:ANN
+getOutput	ann.cpp	/^const double& ANN::getOutput(const int neuron) const$/;"	f	class:ANN
+getOutput	neuron.cpp	/^const double& Neuron::getOutput() const$/;"	f	class:Neuron
+getPost	synapse.cpp	/^Neuron* Synapse::getPost() const$/;"	f	class:Synapse
+getPre	synapse.cpp	/^Neuron* Synapse::getPre() const$/;"	f	class:Synapse
+getPrefAngle	circann.cpp	/^double CircANN::getPrefAngle(int index){$/;"	f	class:CircANN
+getSubnet	ann.cpp	/^ANN* ANN::getSubnet(unsigned int const index)$/;"	f	class:ANN
+getSumRate	circann.cpp	/^double CircANN::getSumRate(){$/;"	f	class:CircANN
+getSynapse	ann.cpp	/^Synapse* ANN::getSynapse(Neuron const * const post, Neuron const * const pre)$/;"	f	class:ANN
+getSynapse	ann.cpp	/^Synapse* ANN::getSynapse(const unsigned int& post, const unsigned int& pre)$/;"	f	class:ANN
+getSynapseFrom	neuron.cpp	/^Synapse* Neuron::getSynapseFrom(Neuron const * pre) const$/;"	f	class:Neuron
+getSynapseTo	neuron.cpp	/^Synapse* Neuron::getSynapseTo(Neuron const * post) const$/;"	f	class:Neuron
+getSynapsesIn	neuron.cpp	/^std::vector<Synapse*> Neuron::getSynapsesIn() const$/;"	f	class:Neuron
+getSynapsesOut	neuron.cpp	/^std::vector<Synapse*> Neuron::getSynapsesOut() const$/;"	f	class:Neuron
+getTheta	transferfunction.h	/^    inline const double& getTheta() const{return theta;}$/;"	f	class:SignFunction
+getTheta	transferfunction.h	/^    inline const double& getTheta() const{return theta;}$/;"	f	class:ThresholdFunction
+getTopologicalSort	ann.cpp	/^std::vector<Neuron*> ANN::getTopologicalSort()$/;"	f	class:ANN
+getTotalNeuronNumber	ann.cpp	/^unsigned int ANN::getTotalNeuronNumber() const$/;"	f	class:ANN
+getVecAvgAngle	circann.cpp	/^double CircANN::getVecAvgAngle(){$/;"	f	class:CircANN
+getVector	circann.cpp	/^osg::Vec3f CircANN::getVector(){$/;"	f	class:CircANN
+getWeight	ann.cpp	/^const double ANN::getWeight(Neuron const * post, Neuron const * pre) const$/;"	f	class:ANN
+getWeight	ann.cpp	/^const double ANN::getWeight(const int& post, const int& pre) const$/;"	f	class:ANN
+getWeight	synapse.cpp	/^const double& Synapse::getWeight() const$/;"	f	class:Synapse
+identityFunction	ann.cpp	/^LinearFunction const * const ANN::identityFunction() {$/;"	f	class:ANN
+identityFunctionPointer	ann.cpp	/^LinearFunction const * const ANN::identityFunctionPointer =$/;"	m	class:ANN	file:
+identityFunctionPointer	ann.h	/^    static LinearFunction const * const identityFunctionPointer;$/;"	m	class:ANN
+includeAllNeuronBiases	backpropagation.cpp	/^void Backpropagation::includeAllNeuronBiases()$/;"	f	class:Backpropagation
+includeAllSynapses	backpropagation.cpp	/^void Backpropagation::includeAllSynapses()$/;"	f	class:Backpropagation
+includeNeuronBias	backpropagation.cpp	/^void Backpropagation::includeNeuronBias(Neuron * neuron)$/;"	f	class:Backpropagation
+includeSynapse	backpropagation.cpp	/^void Backpropagation::includeSynapse(Synapse * synapse)$/;"	f	class:Backpropagation
+input	neuron.h	/^    double input;$/;"	m	class:Neuron
+inputNeurons	backpropagation.h	/^    NeuronMap inputNeurons;$/;"	m	class:Backpropagation
+input_scaling	neuron.h	/^    double input_scaling;$/;"	m	class:Neuron
+inputs	backpropagation.h	/^  std::map<int, double> inputs;$/;"	m	struct:TrainingPattern
+learn	backpropagation.cpp	/^void Backpropagation::learn(const unsigned int& epochs)$/;"	f	class:Backpropagation
+linthresFunctionPointer	ann.cpp	/^LinearThresholdFunction const * const ANN::linthresFunctionPointer =$/;"	m	class:ANN	file:
+linthresFunctionPointer	ann.h	/^    static LinearThresholdFunction const * const linthresFunctionPointer;$/;"	m	class:ANN
+linthresholdFunction	ann.cpp	/^LinearThresholdFunction const * const ANN::linthresholdFunction() {$/;"	f	class:ANN
+logisticFunction	ann.cpp	/^LogisticFunction const * const ANN::logisticFunction() {$/;"	f	class:ANN
+logisticFunctionPointer	ann.cpp	/^LogisticFunction const * const ANN::logisticFunctionPointer =$/;"	m	class:ANN	file:
+logisticFunctionPointer	ann.h	/^    static LogisticFunction const * const logisticFunctionPointer;$/;"	m	class:ANN
+m	transferfunction.h	/^    double m;$/;"	m	class:LinearFunction
+m	transferfunction.h	/^    double m;$/;"	m	class:LinearThresholdFunction
+n	ann.cpp	/^Neuron* ANN::n(unsigned int const index)$/;"	f	class:ANN
+net	backpropagation.h	/^    ANN* net;$/;"	m	class:Backpropagation
+neurons	ann.h	/^    NeuronList              neurons;$/;"	m	class:ANN
+neurons	backpropagation.h	/^    NeuronSet neurons;$/;"	m	class:Backpropagation
+operator ()	transferfunction.h	/^    inline double operator()(const double& x) const {$/;"	f	class:LinearFunction
+operator ()	transferfunction.h	/^    inline double operator()(const double& x) const {$/;"	f	class:LinearThresholdFunction
+operator ()	transferfunction.h	/^    inline double operator()(const double& x) const {$/;"	f	class:LogisticFunction
+operator ()	transferfunction.h	/^    inline double operator()(const double& x) const {$/;"	f	class:SignFunction
+operator ()	transferfunction.h	/^    inline double operator()(const double& x) const {$/;"	f	class:TanhFunction
+operator ()	transferfunction.h	/^    inline double operator()(const double& x) const {$/;"	f	class:ThresholdFunction
+output	neuron.h	/^    double output;$/;"	m	class:Neuron
+outputNeurons	backpropagation.h	/^    NeuronMap outputNeurons;$/;"	m	class:Backpropagation
+outputs	backpropagation.h	/^  std::map<int, double> outputs;$/;"	m	struct:TrainingPattern
+patterns	backpropagation.h	/^    PatternVector patterns;$/;"	m	class:Backpropagation
+post	synapse.h	/^    Neuron * const post;$/;"	m	class:Synapse
+postProcessing	ann.cpp	/^void ANN::postProcessing()$/;"	f	class:ANN
+pre	synapse.h	/^    Neuron * const pre;$/;"	m	class:Synapse
+rate	backpropagation.h	/^    double rate;$/;"	m	class:Backpropagation
+removeNeuron	ann.cpp	/^void ANN::removeNeuron(Neuron const * neuron)$/;"	f	class:ANN
+removeSynapseIn	neuron.cpp	/^void Neuron::removeSynapseIn(Synapse const * synapse)$/;"	f	class:Neuron
+removeSynapseOut	neuron.cpp	/^void Neuron::removeSynapseOut(Synapse const * synapse)$/;"	f	class:Neuron
+scale_factor	circann.h	/^	const double scale_factor = 2.41456;$/;"	m	class:CircANN
+setActivity	ann.cpp	/^void ANN::setActivity(Neuron* neuron, const double & aactivity)$/;"	f	class:ANN
+setActivity	ann.cpp	/^void ANN::setActivity(const int& neuron, const double& aactivity)$/;"	f	class:ANN
+setActivity	neuron.cpp	/^void Neuron::setActivity(const double& aactivity)$/;"	f	class:Neuron
+setAllTransferFunctions	ann.cpp	/^void ANN::setAllTransferFunctions(TransferFunction const * const func,$/;"	f	class:ANN
+setB	transferfunction.h	/^    inline void setB(const double &ab) {b=ab;}$/;"	f	class:LinearFunction
+setB	transferfunction.h	/^    inline void setB(const double &ab) {b=ab;}$/;"	f	class:LinearThresholdFunction
+setBias	ann.cpp	/^void ANN::setBias(Neuron * neuron, const double& abias)$/;"	f	class:ANN
+setBias	ann.cpp	/^void ANN::setBias(const int& neuron, const double& abias)$/;"	f	class:ANN
+setBias	neuron.cpp	/^void Neuron::setBias(const double & abias)$/;"	f	class:Neuron
+setDefaultTransferFunction	ann.cpp	/^void ANN::setDefaultTransferFunction(TransferFunction const * const func)$/;"	f	class:ANN
+setDeltaWeight	ann.cpp	/^void ANN::setDeltaWeight(Neuron* post, Neuron* pre, const double dweight)$/;"	f	class:ANN
+setDeltaWeight	ann.cpp	/^void ANN::setDeltaWeight(const int post, const int pre, const double dweight)$/;"	f	class:ANN
+setDeltaWeight	synapse.cpp	/^void Synapse::setDeltaWeight(const double & aweight)$/;"	f	class:Synapse
+setErrorInput	neuron.cpp	/^void Neuron::setErrorInput(const double & aerror)$/;"	f	class:Neuron
+setInput	ann.cpp	/^void ANN::setInput(Neuron* neuron, const double ainput)$/;"	f	class:ANN
+setInput	ann.cpp	/^void ANN::setInput(const int& neuron, const double& ainput)$/;"	f	class:ANN
+setInput	neuron.cpp	/^void Neuron::setInput(double const & ainput)$/;"	f	class:Neuron
+setInputScaling	ann.cpp	/^void ANN::setInputScaling(Neuron* neuron, const double ascale)$/;"	f	class:ANN
+setInputScaling	ann.cpp	/^void ANN::setInputScaling(const int& neuron, const double& ascale)$/;"	f	class:ANN
+setInputScaling	neuron.cpp	/^void Neuron::setInputScaling(double const & ascale)$/;"	f	class:Neuron
+setLearningRate	backpropagation.cpp	/^void Backpropagation::setLearningRate(const double& arate)$/;"	f	class:Backpropagation
+setM	transferfunction.h	/^    inline void setM(const double &am) {m=am;}$/;"	f	class:LinearFunction
+setM	transferfunction.h	/^    inline void setM(const double &am) {m=am;}$/;"	f	class:LinearThresholdFunction
+setNeuralNetwork	backpropagation.cpp	/^void Backpropagation::setNeuralNetwork(ANN* network)$/;"	f	class:Backpropagation
+setNeuronNumber	ann.cpp	/^void ANN::setNeuronNumber(const unsigned int& anumber)$/;"	f	class:ANN
+setOutput	ann.cpp	/^void ANN::setOutput(Neuron* neuron, const double aoutput)$/;"	f	class:ANN
+setOutput	ann.cpp	/^void ANN::setOutput(const int& neuron, const double& aoutput)$/;"	f	class:ANN
+setOutput	neuron.cpp	/^void Neuron::setOutput(const double& aoutput)$/;"	f	class:Neuron
+setTheta	transferfunction.h	/^    inline void setTheta(const double &atheta) {theta=atheta;}$/;"	f	class:SignFunction
+setTheta	transferfunction.h	/^    inline void setTheta(const double &atheta) {theta=atheta;}$/;"	f	class:ThresholdFunction
+setTransferFunction	ann.cpp	/^void ANN::setTransferFunction(Neuron * neuron,$/;"	f	class:ANN
+setTransferFunction	ann.cpp	/^void ANN::setTransferFunction(const int neuron,$/;"	f	class:ANN
+setTransferFunction	neuron.cpp	/^void Neuron::setTransferFunction(TransferFunction const * const afunction)$/;"	f	class:Neuron
+setWeight	ann.cpp	/^void ANN::setWeight(Neuron* post, Neuron* pre, const double weight)$/;"	f	class:ANN
+setWeight	ann.cpp	/^void ANN::setWeight(const int post, const int pre, const double weight)$/;"	f	class:ANN
+setWeight	synapse.cpp	/^void Synapse::setWeight(const double & aweight)$/;"	f	class:Synapse
+signFunction	ann.cpp	/^SignFunction const * const ANN::signFunction() {$/;"	f	class:ANN
+signFunctionPointer	ann.cpp	/^SignFunction const * const ANN::signFunctionPointer =$/;"	m	class:ANN	file:
+signFunctionPointer	ann.h	/^    static SignFunction const * const signFunctionPointer;$/;"	m	class:ANN
+step	ann.cpp	/^void ANN::step()$/;"	f	class:ANN
+step	circann.cpp	/^void CircANN::step(){$/;"	f	class:CircANN
+subnets	ann.h	/^    AnnList                 subnets;$/;"	m	class:ANN
+synapses	backpropagation.h	/^    SynapseSet synapses;$/;"	m	class:Backpropagation
+synapsesIn	neuron.h	/^    SynapseList synapsesIn;$/;"	m	class:Neuron
+synapsesOut	neuron.h	/^    SynapseList synapsesOut;$/;"	m	class:Neuron
+tanhFunction	ann.cpp	/^TanhFunction const * const ANN::tanhFunction() {$/;"	f	class:ANN
+tanhFunction	neuron.cpp	/^TanhFunction const * const Neuron::tanhFunction = new TanhFunction();$/;"	m	class:Neuron	file:
+tanhFunction	neuron.h	/^    static TanhFunction const * const tanhFunction;$/;"	m	class:Neuron
+tanhFunctionPointer	ann.cpp	/^TanhFunction const * const ANN::tanhFunctionPointer =$/;"	m	class:ANN	file:
+tanhFunctionPointer	ann.h	/^    static TanhFunction const * const tanhFunctionPointer;$/;"	m	class:ANN
+theta	transferfunction.h	/^    double theta;$/;"	m	class:SignFunction
+theta	transferfunction.h	/^    double theta;$/;"	m	class:ThresholdFunction
+thresholdFunction	ann.cpp	/^ThresholdFunction const * const ANN::thresholdFunction() {$/;"	f	class:ANN
+thresholdFunctionPointer	ann.cpp	/^ThresholdFunction const * const ANN::thresholdFunctionPointer =$/;"	m	class:ANN	file:
+thresholdFunctionPointer	ann.h	/^    static ThresholdFunction const * const thresholdFunctionPointer;$/;"	m	class:ANN
+topologicalSort	ann.h	/^    NeuronList              topologicalSort;$/;"	m	class:ANN
+uncorrelated	circann.h	/^enum NoiseType{correlated, uncorrelated};$/;"	e	enum:NoiseType
+updateActivities	ann.cpp	/^void ANN::updateActivities()$/;"	f	class:ANN
+updateActivity	neuron.cpp	/^void Neuron::updateActivity()$/;"	f	class:Neuron
+updateError	neuron.cpp	/^void Neuron::updateError()$/;"	f	class:Neuron
+updateOutput	neuron.cpp	/^void Neuron::updateOutput()$/;"	f	class:Neuron
+updateOutputs	ann.cpp	/^void ANN::updateOutputs()$/;"	f	class:ANN
+updateTopologicalSort	ann.cpp	/^bool ANN::updateTopologicalSort()$/;"	f	class:ANN
+updateWeight	synapse.cpp	/^void Synapse::updateWeight()$/;"	f	class:Synapse
+updateWeights	ann.cpp	/^void ANN::updateWeights()$/;"	f	class:ANN
+vector	circann.h	/^	osg::Vec3f vector;$/;"	m	class:CircANN
+w	ann.cpp	/^const double ANN::w(const int& post, const int& pre)$/;"	f	class:ANN
+w	ann.cpp	/^void ANN::w(Neuron* post, Neuron* pre, const double& aweight)$/;"	f	class:ANN
+w	ann.cpp	/^void ANN::w(const int& post, const int& pre, const double& aweight)$/;"	f	class:ANN
+weight	synapse.h	/^    double weight;$/;"	m	class:Synapse
+~ANN	ann.cpp	/^ANN::~ANN()$/;"	f	class:ANN
+~Backpropagation	backpropagation.cpp	/^Backpropagation::~Backpropagation()$/;"	f	class:Backpropagation
+~CircANN	circann.cpp	/^CircANN::~CircANN() {$/;"	f	class:CircANN
+~Neuron	neuron.cpp	/^Neuron::~Neuron()$/;"	f	class:Neuron
+~Synapse	synapse.cpp	/^Synapse::~Synapse()$/;"	f	class:Synapse
+~TransferFunction	transferfunction.h	/^    virtual ~TransferFunction() {};$/;"	f	class:TransferFunction

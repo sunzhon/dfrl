@@ -1,0 +1,279 @@
+LEG_NUM	controller.cpp	3
+LEG_NUM	controller.cpp~	3
+MODULARNEURAL_H_	#ModularNeural.h#	2
+MODULARNEURAL_H_	ModularNeural.h	2
+ModularNeural	#ModularNeural.h#	28
+ModularNeural	ModularNeural.h	43
+ModularNeural::ModularNeural	ModularNeural.cpp	/^ModularNeural::ModularNeural( int nCPGs) {$/
+ModularNeural::a_t	#ModularNeural.h#	64
+ModularNeural::a_t1	#ModularNeural.h#	64
+ModularNeural::beta	ModularNeural.h	119
+ModularNeural::cpg	#ModularNeural.h#	53
+ModularNeural::cpg	ModularNeural.h	98
+ModularNeural::delta	#ModularNeural.h#	62
+ModularNeural::ffm_grf	ModularNeural.h	123
+ModularNeural::getAttiReflex	ModularNeural.cpp	/^double ModularNeural::getAttiReflex(unsigned int I/
+ModularNeural::getAttiReflexOriNGrfout	ModularNeural.cpp	/^double ModularNeural::getAttiReflexOriNGrfout(unsi/
+ModularNeural::getAttiReflexVrnNout	ModularNeural.cpp	/^double ModularNeural::getAttiReflexVrnNout(unsigne/
+ModularNeural::getCpgFrequency	ModularNeural.cpp	/^double ModularNeural::getCpgFrequency(int ID) {$/
+ModularNeural::getCpgOut0	ModularNeural.cpp	/^double ModularNeural::getCpgOut0(int ID) {$/
+ModularNeural::getCpgOut1	ModularNeural.cpp	/^double ModularNeural::getCpgOut1(int ID) {$/
+ModularNeural::getCpgOut2	ModularNeural.cpp	/^double ModularNeural::getCpgOut2(int ID) {$/
+ModularNeural::getCpgOutP	ModularNeural.cpp	/^double ModularNeural::getCpgOutP(int ID){$/
+ModularNeural::getDLActualInput	ModularNeural.cpp	/^double ModularNeural::getDLActualInput(int ID)cons/
+ModularNeural::getDLBias	ModularNeural.cpp	/^double ModularNeural::getDLBias(int ID ){$/
+ModularNeural::getDLError	ModularNeural.cpp	/^double ModularNeural::getDLError(int ID)const{$/
+ModularNeural::getDLExpectedInput	ModularNeural.cpp	/^double ModularNeural::getDLExpectedInput(int ID)co/
+ModularNeural::getDLOutput	ModularNeural.cpp	/^double ModularNeural::getDLOutput(int ID)const{$/
+ModularNeural::getFFMInput	ModularNeural.cpp	/^double ModularNeural::getFFMInput(int ID)const{$/
+ModularNeural::getFFMOutput	ModularNeural.cpp	/^double ModularNeural::getFFMOutput(int ID)const{$/
+ModularNeural::getInputNeuronInput	ModularNeural.cpp	/^double ModularNeural::getInputNeuronInput(int ID, /
+ModularNeural::getInputNeuronOutput	ModularNeural.cpp	/^double ModularNeural::getInputNeuronOutput(int ID,/
+ModularNeural::getPcpgOutput	ModularNeural.cpp	/^double ModularNeural::getPcpgOutput(int ID, int ne/
+ModularNeural::getPmnOut	ModularNeural.cpp	/^double ModularNeural::getPmnOut(int ID,int neuron_/
+ModularNeural::getPsnOutput	ModularNeural.cpp	/^double ModularNeural::getPsnOutput(int ID, int neu/
+ModularNeural::getVrnOut	ModularNeural.cpp	/^double ModularNeural::getVrnOut(int ID) {$/
+ModularNeural::grf	ModularNeural.h	122
+ModularNeural::inputNeurons	#ModularNeural.h#	57
+ModularNeural::j1_output	ModularNeural.h	126
+ModularNeural::j2_output	ModularNeural.h	127
+ModularNeural::j3_output	ModularNeural.h	128
+ModularNeural::jangle	ModularNeural.h	124
+ModularNeural::k	#ModularNeural.h#	63
+ModularNeural::lin	ModularNeural.h	96
+ModularNeural::mATFs	ModularNeural.h	111
+ModularNeural::mAttiReflexs	ModularNeural.h	112
+ModularNeural::mCPGs	#ModularNeural.h#	58
+ModularNeural::mCPGs	ModularNeural.h	103
+ModularNeural::mDLs	ModularNeural.h	109
+ModularNeural::mDelays	ModularNeural.h	107
+ModularNeural::mFFMs	ModularNeural.h	108
+ModularNeural::mLINs	ModularNeural.h	102
+ModularNeural::mPCPGs	ModularNeural.h	104
+ModularNeural::mPMNs	ModularNeural.h	110
+ModularNeural::mPSNs	#ModularNeural.h#	59
+ModularNeural::mPSNs	ModularNeural.h	105
+ModularNeural::mVRNs	ModularNeural.h	106
+ModularNeural::n_CPGs	#ModularNeural.h#	65
+ModularNeural::n_CPGs	ModularNeural.h	115
+ModularNeural::ori_pitch	ModularNeural.h	121
+ModularNeural::ori_roll	ModularNeural.h	121
+ModularNeural::osc_couple0	#ModularNeural.h#	67
+ModularNeural::osc_couple0	ModularNeural.h	117
+ModularNeural::osc_couple1	#ModularNeural.h#	67
+ModularNeural::osc_couple1	ModularNeural.h	117
+ModularNeural::pcpg	#ModularNeural.h#	52
+ModularNeural::pcpg	ModularNeural.h	97
+ModularNeural::previousID	ModularNeural.h	118
+ModularNeural::psn	#ModularNeural.h#	56
+ModularNeural::psn	ModularNeural.h	101
+ModularNeural::reflex	ModularNeural.h	120
+ModularNeural::setAttituteInput	ModularNeural.cpp	/^void ModularNeural::setAttituteInput(double _roll,/
+ModularNeural::setCpgMi	ModularNeural.cpp	/^void ModularNeural::setCpgMi(unsigned int ID, doub/
+ModularNeural::setFFMalpha	ModularNeural.cpp	/^void ModularNeural::setFFMalpha(int ID,double _alp/
+ModularNeural::setFootSensorForce	ModularNeural.cpp	/^void ModularNeural::setFootSensorForce(int ID,doub/
+ModularNeural::setGamma	ModularNeural.cpp	/^void ModularNeural::setGamma(int ID,double _g1){$/
+ModularNeural::setInputNeuronInput	ModularNeural.cpp	/^void ModularNeural::setInputNeuronInput(int ID, do/
+ModularNeural::setJointSensorAngle	ModularNeural.cpp	/^void ModularNeural::setJointSensorAngle(int ID,dou/
+ModularNeural::setPCPGbeta	ModularNeural.cpp	/^void ModularNeural::setPCPGbeta(int ID, double _be/
+ModularNeural::tau	ModularNeural.h	116
+ModularNeural::tau_l	ModularNeural.h	116
+ModularNeural::update	ModularNeural.cpp	/^void ModularNeural::update(int ID) {$/
+ModularNeural::updateJointMotor	ModularNeural.cpp	/^void ModularNeural::updateJointMotor(unsigned int /
+ModularNeural::vrn_left	#ModularNeural.h#	54
+ModularNeural::vrn_left	ModularNeural.h	99
+ModularNeural::vrn_right	#ModularNeural.h#	55
+ModularNeural::vrn_right	ModularNeural.h	100
+ModularNeural::~ModularNeural	#ModularNeural.h#	/^					~ModularNeural(){}$/
+ModularNeural::~ModularNeural	ModularNeural.h	/^					~ModularNeural(){}$/
+PENDULUM_CONTROLLER_H	stbotController.h	6
+PLOT_LEG	controller.cpp	4
+PLOT_LEG	controller.cpp~	4
+ROS_HEXAPOD_CONTROLLER_SIMROSCLASS_H	simRosClass.h	6
+_CONTROLLER_H_	controller.h	2
+conf	controller.h	170
+debug_mode	controller.h	173
+getMotorNumber	controller.h	/^      virtual int getMotorNumber() const {$/
+getName	controller.h	/^      virtual paramkey getName() const {$/
+getSensorNumber	controller.h	/^      virtual int getSensorNumber() const {$/
+init	controller.h	/^    virtual void init(int sensornumber, int motorn/
+initialize	controller.h	/^    void initialize(int lilDogtype,bool mCPGs,bool/
+matrix	controller.cpp~	5
+modularNeuroController	controller.h	166
+modularNeuroController	controller.h	/^    modularNeuroController( const modularNeuroCont/
+modularNeuroController	controller.h	/^    modularNeuroController(int lilDogtype,bool mCP/
+modularNeuroController::GRForce	controller.h	273
+modularNeuroController::JointAngle	controller.h	275
+modularNeuroController::Orientation	controller.h	274
+modularNeuroController::controlfile_DL	controller.h	278
+modularNeuroController::file_buffer_size	controller.h	279
+modularNeuroController::filterGRF	controller.h	268
+modularNeuroController::filterJangle	controller.h	270
+modularNeuroController::filterOri	controller.h	269
+modularNeuroController::getGaitDiagram	controller.cpp	/^double modularNeuroController::getGaitDiagram(doub/
+modularNeuroController::getGaitDiagram	controller.cpp~	/^double modularNeuroController::getGaitDiagram(doub/
+modularNeuroController::init	controller.cpp	/^void modularNeuroController::init(int sensornumber/
+modularNeuroController::init	controller.cpp~	/^void modularNeuroController::init(int sensornumber/
+modularNeuroController::initialize	controller.cpp	/^void modularNeuroController::initialize(int aAMOSv/
+modularNeuroController::initialize	controller.cpp~	/^void modularNeuroController::initialize(int aAMOSv/
+modularNeuroController::modularNeuroController	controller.cpp	/^modularNeuroController::modularNeuroController($/
+modularNeuroController::modularNeuroController	controller.cpp~	/^modularNeuroController::modularNeuroController($/
+modularNeuroController::restore	controller.cpp	/^bool modularNeuroController::restore(FILE* f) {$/
+modularNeuroController::restore	controller.cpp~	/^bool modularNeuroController::restore(FILE* f) {$/
+modularNeuroController::sensorfile_body	controller.h	277
+modularNeuroController::sensorfile_foot	controller.h	276
+modularNeuroController::step	controller.cpp	/^void modularNeuroController::step(const sensor* x_/
+modularNeuroController::step	controller.cpp~	/^void modularNeuroController::step(const sensor* x_/
+modularNeuroController::store	controller.cpp	/^bool modularNeuroController::store(FILE* f) const /
+modularNeuroController::store	controller.cpp~	/^bool modularNeuroController::store(FILE* f) const /
+modularNeuroController::updateFiles	controller.cpp	/^void modularNeuroController::updateFiles() {$/
+modularNeuroController::updateFiles	controller.cpp~	/^void modularNeuroController::updateFiles() {$/
+modularNeuroController::updateGui	controller.cpp	/^void modularNeuroController::updateGui() {$/
+modularNeuroController::updateGui	controller.cpp~	/^void modularNeuroController::updateGui() {$/
+modularNeuroController::y	controller.h	265
+modularNeuroControllerConf	controller.h	38
+modularNeuroControllerConf	controller.h	/^   modularNeuroControllerConf(){$/
+sigmoid	controller.h	/^    double sigmoid(double num){$/
+simRosClass	simRosClass.h	19
+simRosClass::CPGOutputTopic	simRosClass.h	32
+simRosClass::CPGTopicPub	simRosClass.h	46
+simRosClass::MotorPositionPub	simRosClass.h	45
+simRosClass::MotorTopic	simRosClass.h	22
+simRosClass::currentTime_updatedByTopicSubscriber	simRosClass.h	55
+simRosClass::enableSyncModePub	simRosClass.h	50
+simRosClass::enableSyncModeTopic	simRosClass.h	28
+simRosClass::jointPositionCallback	simRosClass.cpp	/^void simRosClass::jointPositionCallback(const std_/
+simRosClass::jointPositionSub	simRosClass.h	41
+simRosClass::jointPositionTopic	simRosClass.h	33
+simRosClass::pauseSimPub	simRosClass.h	48
+simRosClass::pauseSimTopic	simRosClass.h	26
+simRosClass::plot	simRosClass.cpp	/^void simRosClass::plot(std::vector<float> data) {$/
+simRosClass::rate	simRosClass.h	58
+simRosClass::rosSpinOnce	simRosClass.cpp	/^void simRosClass::rosSpinOnce(){$/
+simRosClass::sensor	simRosClass.h	79
+simRosClass::setMotorPosition	simRosClass.cpp	/^void simRosClass::setMotorPosition(std::vector<flo/
+simRosClass::simRosClass	simRosClass.cpp	/^simRosClass::simRosClass(int argc, char **argv) {$/
+simRosClass::simState	simRosClass.h	57
+simRosClass::simStepDone	simRosClass.h	56
+simRosClass::simulationStateCallback	simRosClass.cpp	/^void simRosClass::simulationStateCallback(const st/
+simRosClass::simulationStateSub	simRosClass.h	40
+simRosClass::simulationStateTopic	simRosClass.h	31
+simRosClass::simulationStepDoneCallback	simRosClass.cpp	/^void simRosClass::simulationStepDoneCallback(const/
+simRosClass::simulationStepDoneSub	simRosClass.h	39
+simRosClass::simulationStepDoneTopic	simRosClass.h	30
+simRosClass::simulationTime	simRosClass.h	80
+simRosClass::simulationTimeCallback	simRosClass.cpp	/^void simRosClass::simulationTimeCallback(const std/
+simRosClass::simulationTimeTopic	simRosClass.h	23
+simRosClass::startSimPub	simRosClass.h	47
+simRosClass::startSimTopic	simRosClass.h	25
+simRosClass::stopSimPub	simRosClass.h	49
+simRosClass::stopSimTopic	simRosClass.h	27
+simRosClass::subSimulationTimeSub	simRosClass.h	37
+simRosClass::subTerminateNodeSub	simRosClass.h	38
+simRosClass::synchronousSimulation	simRosClass.cpp	/^void simRosClass::synchronousSimulation(std::strin/
+simRosClass::terminateNodeCallback	simRosClass.cpp	/^void simRosClass::terminateNodeCallback(const std_/
+simRosClass::terminateNodeTopic	simRosClass.h	24
+simRosClass::terminateSimulation	simRosClass.h	81
+simRosClass::testParameters	simRosClass.h	78
+simRosClass::testParametersCallback	simRosClass.cpp	/^void simRosClass::testParametersCallback(const std/
+simRosClass::testParametersSub	simRosClass.h	42
+simRosClass::testParametersTopic	simRosClass.h	34
+simRosClass::triggerNextStepPub	simRosClass.h	51
+simRosClass::triggerNextStepTopic	simRosClass.h	29
+simRosClass::tv	simRosClass.h	54
+simRosClass::~simRosClass	simRosClass.cpp	/^simRosClass::~simRosClass() {$/
+stAlpha	controller.h	58
+stAttiReflexFL	controller.h	103
+stAttiReflexFR1	controller.h	101
+stAttiReflexFR2	controller.h	102
+stAttiReflexRL	controller.h	104
+stBeta	controller.h	57
+stDLActualInput	controller.h	97
+stDLBias	controller.h	96
+stDLError	controller.h	95
+stDLExpectedInput	controller.h	98
+stDLOutput	controller.h	94
+stFFMInput	controller.h	91
+stFFMOutput	controller.h	90
+stFLJ1	controller.h	129
+stFLJ2	controller.h	130
+stFLJ3	controller.h	131
+stFMError	controller.h	84
+stFMInput	controller.h	81
+stFMLearnError	controller.h	85
+stFMLearnrate	controller.h	87
+stFMLowpassError	controller.h	86
+stFMOutput	controller.h	79
+stFMOutputfinal	controller.h	80
+stFMcounter	controller.h	83
+stFMw20	controller.h	82
+stFRJ1	controller.h	126
+stFRJ2	controller.h	127
+stFRJ3	controller.h	128
+stFR_PCPG_H0	controller.h	62
+stFR_PCPG_H1	controller.h	63
+stFR_PMN_0	controller.h	73
+stFR_PMN_1	controller.h	74
+stFR_PMN_2	controller.h	75
+stFR_PSN_10	controller.h	66
+stFR_PSN_11	controller.h	67
+stFR_VRN	controller.h	70
+stGammaFL	controller.h	117
+stGammaFR	controller.h	116
+stGammaRL	controller.h	119
+stGammaRR	controller.h	118
+stGrfFL	controller.h	109
+stGrfFR	controller.h	107
+stGrfRL	controller.h	110
+stGrfRR	controller.h	108
+stJ1SwitchFL	controller.h	43
+stJ1SwitchFR	controller.h	41
+stJ1SwitchRL	controller.h	44
+stJ1SwitchRR	controller.h	42
+stMI	controller.h	56
+stOriPitch	controller.h	113
+stOriRoll	controller.h	114
+stPsnSwitchFL	controller.h	47
+stPsnSwitchFR	controller.h	46
+stPsnSwitchRL	controller.h	49
+stPsnSwitchRR	controller.h	48
+stRLJ1	controller.h	132
+stRLJ2	controller.h	133
+stRLJ3	controller.h	134
+stRRJ1	controller.h	135
+stRRJ2	controller.h	136
+stRRJ3	controller.h	137
+stVrnSwitchFL	controller.h	52
+stVrnSwitchFR	controller.h	51
+stVrnSwitchRL	controller.h	54
+stVrnSwitchRR	controller.h	53
+stbotController::runController	stbotController.cpp	/^bool stbotController::runController() {$/
+stcontroller	controller.cpp	8
+stcontroller	controller.cpp~	/^namespace stcontroller {$/
+stcontroller	ModularNeural.h	31
+stcontroller	stbotController.cpp	8
+stcontroller	stbotController.h	22
+stcontroller	stbotController.h	25
+stcontroller::modularNeuroController::~modularNeuroController	controller.cpp	/^modularNeuroController::~modularNeuroController() /
+stcontroller::stbotController	stbotController.h	26
+stcontroller::stbotController::controller	stbotController.h	45
+stcontroller::stbotController::motor	stbotController.h	39
+stcontroller::stbotController::motorPtr	stbotController.h	34
+stcontroller::stbotController::sensor	stbotController.h	38
+stcontroller::stbotController::sensorPtr	stbotController.h	33
+stcontroller::stbotController::sensor_data	stbotController.h	40
+stcontroller::stbotController::simInput	stbotController.h	32
+stcontroller::stbotController::simRos	stbotController.h	46
+stcontroller::stbotController::stbotController	stbotController.cpp	/^stbotController::stbotController(int argc,char* ar/
+std	controller.cpp~	6
+std	stbotController.h	21
+step	controller.h	/^    virtual void step(const sensor*, int number_se/
+stepNoLearning	controller.h	/^      virtual void stepNoLearning(const sensor*, i/
+stgrfN	controller.h	123
+store	controller.h	/^    virtual bool store(FILE* f) const;$/
+storiN1	controller.h	121
+storiN2	controller.h	122
+stvrnN	controller.h	124
+updateFiles	controller.h	/^    void updateFiles();$/
+updateGui	controller.h	/^    void updateGui();$/
+~modularNeuroController	controller.h	/^    virtual ~modularNeuroController();$/

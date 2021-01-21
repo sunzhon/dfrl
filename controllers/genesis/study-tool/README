@@ -1,0 +1,9 @@
+#
+#Author: SUN TAO
+#email: suntao.hgn@qq.com
+#Date: August 1st, 2018
+#This is a introduction for directory study-tool
+#
+
+There are two tools until to now, the first one is to store controllers's data using FileOperator.cpp and Log.cpp, another one is to plot any varianaces in code using ipcFifo.cpp and plotData.cpp. For the plot tool manual, there is a demo in mainTest.cpp, which use this tool to plot three variance in a chart.
+

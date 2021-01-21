@@ -1,0 +1,14 @@
+<launch>
+
+<arg name="hostname" default="$(env ROS_HOSTNAME)"/>
+<arg name="user" default="$(env USER)" />
+<arg name="stbot" default="stbot" />
+
+<machine name="$(arg hostname)"  address="$(arg hostname)" env-loader="~/workspace/gorobots/projects/stbot/genesis/catkin_ws/src/stbot/config/stbot_env.zsh" user="$(arg user)" />
+
+<arg name="controller_args"			default="dmpNode" />
+
+<node machine="$(arg hostname)" name="dmp_node" pkg="stbot" type="stbot_dmp_node.py" required="true" output="screen" args="$(arg controller_args)" />
+
+</launch>
+

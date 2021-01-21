@@ -1,0 +1,8 @@
+prefix=/home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/devel
+
+Name: stbot_dfrl
+Description: Description of stbot_dfrl
+Version: 0.0.0
+Cflags: -I/home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/include
+Libs: -L${prefix}/lib -lstbot_dfrl
+Requires: roscpp std_msgs sensor_msgs control_msgs

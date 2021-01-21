@@ -1,0 +1,27 @@
+<!--
+@author: sun tao
+@Date: 2019-1-10
+@Description: launch stbot controlller
+-->
+
+<launch>
+
+    <arg name="hostname" default="$(env ROS_HOSTNAME)"/>
+    <arg name="user" default="$(env USER)" />
+    <arg name="stbot_dfrl" default="stbot_dfrl" />
+
+    <machine name="$(arg hostname)"  address="$(arg hostname)" env-loader="./../config/stbot_env.zsh" user="$(arg user)" />
+
+    <rosparam file="$(find stbot)/config/stbot.yaml" command="load" />
+
+    <!-- include file="$(find stbot)/launch/stbot_reflex.launch"  / -->
+    <include file="$(find stbot)/launch/stbot_dfrl.launch"  />
+    <!-- include file="$(find stbot)/launch/stbot_cpg.launch"  / -->
+    <!-- include file="$(find stbot)/launch/stbot_dmp.launch"  / -->
+
+    <!-- If to debug, add  launch-prefix='gdb -ex run - - args'  in this follow table  / -->
+
+    <!-- node machine="$(arg hostname)" name="control_node" pkg="stbot" type="stbot_node" required="true" output="screen" args="$(arg stbot)" / --> 
+
+
+</launch>

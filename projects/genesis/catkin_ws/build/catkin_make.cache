@@ -1,0 +1,2 @@
+stbot_dfrl
+-DCATKIN_DEVEL_PREFIX=/home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/install -G Unix Makefiles
