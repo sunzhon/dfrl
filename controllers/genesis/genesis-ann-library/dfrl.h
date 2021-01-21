@@ -15,7 +15,6 @@
 #include <stdio.h>
 #include <assert.h>
 #include <iostream>
-#include "esnForwardmodel.h"
 #include "learning-tool/lowPassfilter.h"
 #include "learning-tool/dilearn.h"
 #include "GRFsDistribution.h"
@@ -50,12 +49,10 @@ namespace stcontroller {
                 // This indicates the desired GRFs distribution (\gamma)
                 b(0, -1.1);
                 b(1, -1.1);
-
                 w(1,0,-1.0);
             }
 
     };
-
 
     class ReflexHiddenLayer: public ANN{
         public:
@@ -77,7 +74,7 @@ namespace stcontroller {
     };
 
 
-    //-------------------Distribution force feedback-based reflex with oneline learning (DFRL) class------------------//
+    //-------------------Distribution-force-feedback-based reflex with oneline learning (DFRL) class------------------//
     class DFRL : public ANN{
         public:
             DFRL(unsigned int ID);
@@ -98,7 +95,7 @@ namespace stcontroller {
             float optimize_variable;
 
 
-            //DFFB reflex neural network
+            //DFFB reflex neural network with three layers
             ReflexInputLayer* input_layer;
             ReflexHiddenLayer* hidden_layer;
             ReflexOutputLayer* output_layer;

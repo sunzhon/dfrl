@@ -9,14 +9,6 @@ namespace stcontroller{
 
     DFRL::DFRL(unsigned int ID){
         this->ID=ID;
-        /* This is create ESN object as a forward model  */
-        // esn = new ESNForwardmodel(/*unsigned int ID*/ ID, /*string path=*/ "/home/suntao/workspace/experiment_data/ESN_parameters/", /*unsigned int  n_input*/ 2, /*unsigned int n_output*/ 1, /*unsigned int n_hidden*/ 60, /*bool feedback*/ false, /*bool feeding_input*/ false, /*leak rate*/ 0.5);
-
-        // esn->setParameters(/*transfer_func_out=linear*/ 0, /*transfer_func_hidden=tanh*/2, /*standard esn learning, 1 =RL, 2=RLS or */ 2, /*input connect to all hidden neurons*/ 0, /* input range [-1.0,1.0]*/ 2.0, /*learn_mode=RLS*/ 1, /*load_weight not load learned weight*/ false, /*noise_range*/ 0.001, /* RCneuronNoise, constant fixed bias*/ false);
-
-        //esn_inputs.resize(2); //hip2 offset and knee offset
-        //esn_targets.resize(1); // Distributed Force
-        //esn_output=0.0;// distributed Force
 
         //1) reflex neural network---DFFB reflex neural network
         input_layer= new ReflexInputLayer();
@@ -40,7 +32,7 @@ namespace stcontroller{
         // feedback compuate COG gamma
         GRFs_distribution = new GRFsDistribution();//beweent front hind legs
 
-        // optimer outputs manipulation variable
+        // optimer outputs manipulation variable, DIL
         optimizer= new Optimizer();
         feedback=0.0;
         optimize_variable=0.0;
@@ -92,7 +84,7 @@ namespace stcontroller{
             ANN::setOutput(0,control_1);
             ANN::setOutput(1,control_2);
         }
-        printf("GRFs distribution: %0.3f, reflex:%0.3f, error:%0.3f\n", feedback, control_1, input_layer->getOutput(0));
+       //printf("GRFs distribution: %0.3f, reflex:%0.3f, error:%0.3f\n", feedback, control_1, input_layer->getOutput(0));
 
     }
 
@@ -121,7 +113,7 @@ namespace stcontroller{
         output =0.0;
         current_error = 0.0;
         previous_error = 0.0;
-        // dual integral learn 
+        // dual integral learn (DIL)
         dil= new DILearn();
         dil->setParameters(0.01, 0.05, 0.001,     0.1, 0.01, 0.0001); //
         dil->setLimit(.01,-.01);
