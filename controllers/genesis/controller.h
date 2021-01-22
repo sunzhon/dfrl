@@ -9,8 +9,8 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cmath>
-#include<pthread.h>
-#include<errno.h>
+#include <pthread.h>
+#include <errno.h>
 #include <ros/ros.h>
 #include "std_msgs/Bool.h"
 #include "std_msgs/Float32.h"
@@ -28,35 +28,35 @@ class ModularNeuroController;
 class Log;
 
 namespace stcontroller{
-class Controller {
-public:
-    Controller(int argc,char* argv[]);
-    ~ Controller();
-    bool run();
-private:
-    std::vector<float> motorValue;
-    std::vector<float> sensorValue;
-    std::vector<float> controlParameters;
-    std::vector<float> neuroNetworkOutput;
-	
-    float forceLimit = 10000;
-	uint8_t leg_num;
-	uint8_t motor_num;
-	uint8_t pose_num;
-	uint8_t sensor_num;
-	uint8_t param_num;
+    class Controller {
+        public:
+            Controller(int argc,char* argv[]);
+            ~ Controller();
+            bool run();
+        private:
+            std::vector<float> motorValue;
+            std::vector<float> sensorValue;
+            std::vector<float> controlParameters;
+            std::vector<float> neuroNetworkOutput;
 
-	unsigned int files_num;
-    std::vector<std::string> files;
+            float forceLimit = 10000;
+            uint8_t leg_num;
+            uint8_t motor_num;
+            uint8_t pose_num;
+            uint8_t sensor_num;
+            uint8_t param_num;
 
-    ModularNeuroController * neuroController;    		
-    RosClass * ros;
-    Log* log;
-private:
-    pthread_t tid;
-    static void *paramServiceThread(void *arg);
-    void paramService();
-};
+            unsigned int files_num;
+            std::vector<std::string> files;
+
+            ModularNeuroController * neuroController;    		
+            RosClass * ros;
+            Log* log;
+        private:
+            pthread_t tid;
+            static void *paramServiceThread(void *arg);
+            void paramService();
+    };
 
 }
 #endif //PENDULUM_CONTROLLER_H

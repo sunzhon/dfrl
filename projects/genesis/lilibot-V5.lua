@@ -74,15 +74,9 @@ function sliderChange(ui,id,newVal)
         simSetGraphUserData(graphHandleRF,"PMN0",data[12])
         simSetGraphUserData(graphHandleRF,"PMN1",data[13])
         simSetGraphUserData(graphHandleRF,"PMN2",data[14])
-        simSetGraphUserData(graphHandleRF,"GRF",data[90])
-        --[[
-        simSetGraphUserData(graphHandleRF,"PMN0",data[13])
-        simSetGraphUserData(graphHandleRF,"PMN1",data[14])
-        simSetGraphUserData(graphHandleRF,"PMN2",data[15])
-        simSetGraphUserData(graphHandleRF,"Jaf0",data[16])
-        simSetGraphUserData(graphHandleRF,"Jaf1",data[17])
-        simSetGraphUserData(graphHandleRF,"Jaf2",data[18])
-        --]]
+        simSetGraphUserData(graphHandleRF,"GRF",data[85])
+
+
         simSetGraphUserData(graphHandleRH,"CPGN0",data[22])
         simSetGraphUserData(graphHandleRH,"CPGN1",data[23])
         simSetGraphUserData(graphHandleRH,"PCPGN0",data[24])
@@ -97,15 +91,7 @@ function sliderChange(ui,id,newVal)
         simSetGraphUserData(graphHandleRH,"PMN0",data[33])
         simSetGraphUserData(graphHandleRH,"PMN1",data[34])
         simSetGraphUserData(graphHandleRH,"PMN2",data[35])
-        simSetGraphUserData(graphHandleRH,"GRF",data[91])
-        --[[
-        simSetGraphUserData(graphHandleRH,"PMN0",data[31])
-        simSetGraphUserData(graphHandleRH,"PMN1",data[32])
-        simSetGraphUserData(graphHandleRH,"PMN2",data[33])
-        simSetGraphUserData(graphHandleRH,"Jaf0",data[34])
-        simSetGraphUserData(graphHandleRH,"Jaf1",data[35])
-        simSetGraphUserData(graphHandleRH,"Jaf2",data[36])
-        --]]
+        simSetGraphUserData(graphHandleRH,"GRF",data[86])
 
         simSetGraphUserData(graphHandleLF,"CPGN0",data[43])
         simSetGraphUserData(graphHandleLF,"CPGN1",data[44])
@@ -121,14 +107,7 @@ function sliderChange(ui,id,newVal)
         simSetGraphUserData(graphHandleLF,"PMN0",data[54])
         simSetGraphUserData(graphHandleLF,"PMN1",data[55])
         simSetGraphUserData(graphHandleLF,"PMN2",data[56])
-        --[[
-        simSetGraphUserData(graphHandleLF,"PMN0",data[49])
-        simSetGraphUserData(graphHandleLF,"PMN1",data[50])
-        simSetGraphUserData(graphHandleLF,"PMN2",data[51])
-        simSetGraphUserData(graphHandleLF,"Jaf0",data[52])
-        simSetGraphUserData(graphHandleLF,"Jaf1",data[53])
-        simSetGraphUserData(graphHandleLF,"Jaf2",data[54])
-        --]]
+        simSetGraphUserData(graphHandleLF,"GRF",data[87])
 
         simSetGraphUserData(graphHandleLH,"CPGN0",data[64])
         simSetGraphUserData(graphHandleLH,"CPGN1",data[65])
@@ -141,14 +120,8 @@ function sliderChange(ui,id,newVal)
         simSetGraphUserData(graphHandleLH,"ReflexOut0",data[72])
         simSetGraphUserData(graphHandleLH,"ReflexOut1",data[73])
         simSetGraphUserData(graphHandleLH,"ReflexOut2",data[74])
-        --[[
-        simSetGraphUserData(graphHandleLH,"PMN0",data[67])
-        simSetGraphUserData(graphHandleLH,"PMN1",data[68])
-        simSetGraphUserData(graphHandleLH,"PMN2",data[69])
-        simSetGraphUserData(graphHandleLH,"Jaf0",data[70])
-        simSetGraphUserData(graphHandleLH,"Jaf1",data[71])
-        simSetGraphUserData(graphHandleLH,"Jaf2",data[72])
-        --]]
+        simSetGraphUserData(graphHandleLH,"GRF",data[88])
+
     end
 
     --[[

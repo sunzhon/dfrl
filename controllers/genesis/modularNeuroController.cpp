@@ -4,19 +4,15 @@ Descriptions: the main interface of controller
 Authors: sun tao
  *****/
 #include "modularNeuroController.h"
-#define PLOT_LEG 0
 using namespace matrix;
 using namespace std;
-//using namespace lpzrobots;
-//plotData plot("2",4);
-bool ANC=true;
 bool TestIntergrative=false;
 vector<float> Exp_GRF;
 MOTIONSATGE MotionStage=SELF_ORGANIZATION_STAGE;// motion stage 
 namespace stcontroller {
     ModularNeuroController::ModularNeuroController(const ModularNeuroControllerConf& c): conf(c) {
 
-            //1.1) initial filter
+            //1.1) initial filter of sensory feedback
             filterGRF.resize(conf.leg_num);
             filterPose.resize(conf.pose_num); // 3 orientation and 3 position
             filterPosition.resize(conf.motor_num);
@@ -49,19 +45,29 @@ namespace stcontroller {
             for (unsigned int i = 0; i < filterVoltage.size(); i++)
                 filterVoltage.at(i) = new lowPass_filter(0.7);
 
-            movingFilterPitch = new MovingAverage(1,50);// The arg is filter level
-            movingFilterRoll = new MovingAverage(1,50);
-            manipulator = new Manipulation();
         }
     ModularNeuroController::~ModularNeuroController() {
-        delete movingFilterRoll;
-        delete movingFilterPitch;
-
+        //delete mnc
         delete mnc;// modular neural control
-        delete anc;// autonomous neural connection
-        delete FAVes;// frequency adaptation based on vestibular feedback
-
-        delete manipulator;
+        // delete filters
+        for(std::vector<lowPass_filter *>::iterator it= filterGRF.begin();it!=filterGRF.end();it++ )
+            delete *it;
+        filterGRF.clear();
+        for(std::vector<lowPass_filter *>::iterator it= filterPose.begin();it!=filterPose.end();it++ )
+            delete *it;
+        filterPose.clear();
+        for(std::vector<lowPass_filter *>::iterator it= filterPosition.begin();it!=filterPosition.end();it++ )
+            delete *it;
+        filterPosition.clear();
+        for(std::vector<lowPass_filter *>::iterator it= filterVelocity.begin();it!=filterVelocity.end();it++ )
+            delete *it;
+        filterVelocity.clear();
+        for(std::vector<lowPass_filter *>::iterator it= filterCurrent.begin();it!=filterCurrent.end();it++ )
+            delete *it;
+        filterCurrent.clear();
+        for(std::vector<lowPass_filter *>::iterator it= filterVoltage.begin();it!=filterVoltage.end();it++ )
+            delete *it;
+        filterVoltage.clear();
     }
 
     void ModularNeuroController::initialize(int aAMOSversion, bool mCPGs,
@@ -69,14 +75,9 @@ namespace stcontroller {
         t = 0;
         //the second variable corresponds to the number of cpgs to create,i.e. fourlegs=4
         mnc = new ModularNeural(conf.leg_num);
-        anc = new AutoNeuralConnection(conf.leg_num);//estimate movement phase diff and its stability
-        ANCstability =0.0;
-        ANC_RP_NC.set(conf.leg_num,conf.leg_num);
-        ANC_RP.set(conf.leg_num,conf.leg_num);
-        FAVes = new FrequencyAdaptationBasedVes();// frequancy adaptation based on vestibular feedback
-        std::cout<<"##-----------------------------------------##"<<std::endl;
-        std::cout<<"Initial Modulaer Neural network successfuly !"<<std::endl;
-        std::cout<<"---------------------------------------------"<<std::endl;
+        std::cout<<"#------------------------------------------------#"<<std::endl;
+        std::cout<<"#--Initial Modulaer Neural network successfuly !-#"<<std::endl;
+        std::cout<<"#------------------------------------------------#"<<std::endl;
     }
 
     void ModularNeuroController::init(int sensornumber, int motornumber) {
@@ -145,10 +146,6 @@ namespace stcontroller {
         for(unsigned int i = 0; i < filterGRF.size(); i++){
             GRForce.at(i) = filterGRF.at(i)->update(x.at(i+4*conf.motor_num + conf.pose_num));//filtering of the feedback signal,force signal
         }
-        //Pose.at(0)=movingFilterRoll->update(Pose.at(0));
-        //Pose.at(1)=movingFilterPitch->update(Pose.at(1));
-        //std::cout<<"R:"<<movingFilterRoll->update(Pose.at(0))<<endl;
-        //std::cout<<"P:"<<movingFilterPitch->update(Pose.at(1))<<endl;
         //-------------------------------------------------------------------------//
         //0.15) get the CPGSType from ros param
         CPGSType=(CPGSTYPE)conf.stCPGSType; 
@@ -159,48 +156,17 @@ namespace stcontroller {
             mnc->setPCPGbeta(i, conf.stPCPGBeta);
             mnc->setMNBias(i,conf.stMNBias1.at(i),conf.stMNBias2.at(i),conf.stMNBias3.at(i));
         }
-        //1.2) upper and out layer input ,update inputNeuron Input,1-侧摆关节抑制转移，2-Psn，3-VRN,4-待用
-        manipulator->setInput(0.0, 0.0, 0.0, Pose.at(2), Pose.at(1), mnc->getPMNOutput(1), mnc->getPMNOutput(2));// expected_speed, direction,actual_speed, actual_direction=yaw, pitch, pmn1, pmn2
-        manipulator->step();
         for(unsigned int i =0;i<conf.leg_num;i++)
-            mnc->setInputNeuronInput(i,conf.stJ1Input.at(i),conf.stPsnInput.at(i), conf.stVrnHipInput.at(i) + manipulator->getHipVRNOutput(i), conf.stVrnKneeInput.at(i) + manipulator->getKneeVRNOutput(i));
+            mnc->setInputNeuronInput(i,conf.stJ1Input.at(i),conf.stPsnInput.at(i), conf.stVrnHipInput.at(i), conf.stVrnKneeInput.at(i));
 
-        //2) update orientation for body of attitude control, frequancy adaptation
+        //2) set sensory feedback
         mnc->setAttituteInput(Pose);//update the attitude input
-        FAVes->setInput(Pose.at(0), Pose.at(1));
-        FAVes->step();
-        //3.0) update CPGS criterion paramters movement phase diff and its stability
-        if(ANC){
-            for(unsigned int i=0;i<conf.leg_num;i++){
-                anc->setInput(i,pcpgsig(t,mnc->getCpgOut0(i)));// step signals
-            }
-            anc->step();
-            ANC_RP =anc->getPhaseDiff();
-            ANCstability=anc->getPhaseStability();
-         /*
-            //3.1) The phase stable stage
-            if(anc->getANCtrigger()){// decoupled 
-                MotionStage=PHASE_STABLE_STAGE;// phase stable stage
-                if(CPGSType!=SP){//autonomous neural connection 
-                    conf.stsetCPGS.State = true;//set CPGSType to Ros param
-                    conf.stCPGSType = SP;//set CPGSType to Ros param
-                    ANC_RP_NC = ANC_RP;// sp_cmatrix is formed when CPGType is decoupled
-                    cout<<"##-----INFO---##"<<endl;
-                    cout<<"Now CPGType is SP"<<endl;
-                    cout<<"----------------"<<endl;
-                }
-                
-            }
-        */
-        }
-        //3.3) set the sensory feedback and update step of each leg
         for (unsigned int i = 0; i < conf.leg_num; i++) {
             mnc->setJointSensorAngle(i, JointPosition.at(3 * i),
                     JointPosition.at(3 * i + 1), JointPosition.at(3 * i + 2));
             mnc->setFootSensorForce(i,GRForce.at(i));//GRF feedback
-            mnc->setACIMatrix(ANC_RP_NC);//gait term, autonomous neural connection`
         }
-        // update steps after all sensory information are update
+        //3) update steps after all sensory information are update
         for (unsigned int i = 0; i < conf.leg_num; i++) {
             mnc->step(i,CPGSType);
         }
@@ -213,9 +179,10 @@ namespace stcontroller {
         t++;
     }
 
-    //utility to draw outputs of the neurons
     void ModularNeuroController::updateData() {
-
+        /*
+        utility to draw outputs of mnc
+        */
         for(unsigned int i=0;i<conf.leg_num;i++){
             //1) CPG
             conf.stCPGN0.at(i) =mnc->getCpgOut0(i);
@@ -229,28 +196,28 @@ namespace stcontroller {
             //4) VRN
             conf.stVRNHip.at(i) = mnc->getHipVrnOutput(i);
             conf.stVRNKnee.at(i) = mnc->getKneeVrnOutput(i);
-            //5) attiReflex of one leg
-            conf.stReflexOutN0.at(i)= mnc->getVestibularReflexOutput(i,0);
-            conf.stReflexOutN1.at(i)= mnc->getVestibularReflexOutput(i,1);
-            conf.stReflexOutN2.at(i)= mnc->getVestibularReflexOutput(i,2);
+            //5) Reflex of a leg
+            conf.stReflexOutN0.at(i)= mnc->getDFRLOutput(0);
+            conf.stReflexOutN1.at(i)= mnc->getDFRLOutput(1);
+            conf.stReflexOutN2.at(i)= mnc->getDFRLOutput(2);
             //6) PMN
             conf.stPMN0.at(i) = mnc->getPmnOutput(i, 0);
             conf.stPMN1.at(i) = mnc->getPmnOutput(i, 1);
             conf.stPMN2.at(i) = mnc->getPmnOutput(i, 2);
             //8) AFG adaptive feedback gain
-            conf.stAFGOut.at(i) = mnc->getAFGOutput(i);
+            conf.stAFGOut.at(i) = 0.03;
             //9) FA frequency adaptation
-            conf.stFAOut.at(i) = mnc->getFAOutput(i);
+            conf.stFAOut.at(i) = 0.0;
             //10) sensory feedback term in CPG
             conf.stPAOut0.at(i) = mnc->getSFOutput(i,0);
             conf.stPAOut1.at(i) = mnc->getSFOutput(i,1);
-            //11) NP for ground reactive force
+            //11) NP for ground reaction force
             conf.stNPOut.at(i) = mnc->getNPOutput(i);
             //12) adaptive control input term in CPG
             conf.stACIOut0.at(i)=mnc->getACIOutput(i,0);// the gait term in CPG
             conf.stACIOut1.at(i)=mnc->getACIOutput(i,1);// the gait term in CPG
             //13) forward model of AFG
-            conf.stFMOut.at(i)=mnc->getAFGfmOutput(i);
+            conf.stFMOut.at(i)=0;
 
         }
     }
@@ -296,15 +263,10 @@ namespace stcontroller {
             data.push_back(conf.stFMOut.at(i));//20
         }
         //10) phase and its stability
-        data.push_back(ANC_RP.val(0,1));//84
-        data.push_back(ANC_RP.val(0,2));//85
-        data.push_back(ANC_RP.val(0,3));//86
-        data.push_back(ANCstability);//87
-        data.push_back(anc->getANCtrigger());//88
-        //data.push_back(FAVes->getOutput());//89
-        //data.push_back(Pose.at(1));//90
-        data.push_back(GRForce.at(0));//89--RF
-        data.push_back(GRForce.at(3));//90--LH
+        data.push_back(GRForce.at(0));//84--RF
+        data.push_back(GRForce.at(1));//85--RH
+        data.push_back(GRForce.at(2));//86--LF
+        data.push_back(GRForce.at(3));//87--LH
     }
 
 
@@ -360,11 +322,11 @@ namespace stcontroller {
         }
         //5) modules
         modules_data.clear();
-        modules_data.push_back(ANCstability);
         modules_data.push_back(mnc->getDFRLplasticWeight(0));
         modules_data.push_back(mnc->getDFRLplasticWeight(1));
-        modules_data.push_back(mnc->getDFRLplasticWeight(2));
-        modules_data.push_back(mnc->getDFRLplasticWeight(3));
+        modules_data.push_back(mnc->getDFRLOutput(0));
+        modules_data.push_back(mnc->getDFRLOutput(1));
+        modules_data.push_back(mnc->getDFRLOutput(2));
     }
 
 }

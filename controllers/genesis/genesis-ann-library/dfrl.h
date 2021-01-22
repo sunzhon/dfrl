@@ -21,8 +21,8 @@
 
 
 class lowPass_filter;
-class DILearn;
 class GRFsDistribution;
+class DILearn;
 
 using namespace std;
 namespace stcontroller {
@@ -81,7 +81,7 @@ namespace stcontroller {
             ~DFRL();
             void setInput(std::vector<float> grf);
             void step();
-            float getOutput();
+            float getOutput(unsigned int index);
             float getPlasticWeight(unsigned int index);
         private:
             //feedback GRFs distribution

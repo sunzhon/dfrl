@@ -20,18 +20,10 @@
 #include "genesis-ann-library/neuralpreprocessing.h"
 #include "genesis-ann-library/vestibularReflex.h"
 #include "genesis-ann-library/dfrl.h"
-#include "genesis-ann-library/touchReflex.h"
-#include "genesis-ann-library/FlexorReflex.h"
-#include "genesis-ann-library/ExtensorReflex.h"
-#include "genesis-ann-library/LocalReflex.h"
 #include "genesis-ann-library/ftnn.h"
-#include "genesis-ann-library/ikinenn.h"
-#include "genesis-ann-library/esnForwardmodel.h"
 
 #include "learning-tool/delayneuron.h"
 #include "learning-tool/dlearn.h"
-#include "learning-tool/adaptiveFeedbackGain.h"
-#include "learning-tool/frequencyAdaptation.h"
 
 #include "utils/ann-framework/neuron.h"
 #include "utils/ann-framework/synapse.h"
@@ -49,21 +41,12 @@ class DFPCPG;
 class VRN;
 class PSN;
 class NP;// neural preprocessing
-class AdaptiveFeedbackGain;
-class FrequencyAdaptation;
 class AttitudeFeedback;
 class BpNet;
 class ForceForwardmodel;
-class FlexorReflex;
-class ExtensorReflex;
-class LocalReflex;
-class TouchReflex;
 class ConnectionMatrix;
 class PredefinedGait;
-class FTNN;
-class IkineNN;
 //class DFRL;// DFFB reflex with online learning
-//class DelayNeuron;
 
 class ModularNeural : public ANN{
 			public:
@@ -108,8 +91,6 @@ class ModularNeural : public ANN{
 			float getSFOutput(unsigned int ID,unsigned int index)const;
             //adaptive controil input term in CPG
 			float getACIOutput(unsigned int ID, unsigned int index)const;
-            //frequency adaptation
-			float getFAOutput(unsigned int ID)const;
             //adaptive feedback gain
 			float getAFGOutput(unsigned int ID)const;
             //sensory adaptation of forward model
@@ -125,9 +106,8 @@ class ModularNeural : public ANN{
 
             // distributed force feedback based (DFFB) reflex with online learning (DFRL)
             float getDFRLplasticWeight(unsigned int index)const;
+            float getDFRLOutput(unsigned int index)const;
 
-            // reflexes switch, for choose and add reflexes into PMN of CPGs control
-            void reflexesSwitch(unsigned int ID);
 			private:
 				std::vector<stcontroller::LIN*> mLINs;//输入神经元组,input neurons
 				std::vector<SPCPG*> mCPGs;// CPGs
@@ -135,18 +115,8 @@ class ModularNeural : public ANN{
 				std::vector<PSN*> mPSNs;// PMN
 				std::vector<VRN*> hip_mVRNs;//sun tao  add this
 				std::vector<VRN*> knee_mVRNs;// to regulate knee joint signal
-				std::vector<DelayNeuron*> mDelays;
-				std::vector<AdaptiveFeedbackGain *>mAFGs;// adaptive feedback gain
-				std::vector<FrequencyAdaptation *>mFAs;//pinglv shiyingxing
 				std::vector<PMN *> mPMNs;//运动神经元
-				std::vector<stcontroller::VestibularReflex *> mVestiReflexs;//姿态控制
-				std::vector<stcontroller::TouchReflex *> mTouchReflexs;// GRF distribution reflexes
-				std::vector<stcontroller::FlexorReflex *> mFlexorReflexs;//flexor reflex to negotiate obstacle
-				std::vector<stcontroller::ExtensorReflex *> mExtensorReflexs;//flexor reflex to negotiate obstacle
-				std::vector<stcontroller::LocalReflex *> mLocalReflexs;//flexor reflex to negotiate obstacle
 				std::vector<NP *> mNPs;//neural preprocessing for grf
-                std::vector<FTNN *> mFTNNs;// foot trajectory neural network
-                std::vector<IkineNN *> mIkineNNs;// foot trajectory neural network
 
                 DFRL * dffbReflex;
 				unsigned int n_CPGs;
@@ -165,7 +135,5 @@ class ModularNeural : public ANN{
 				std::vector<std::vector<float> > jmc;//joint motor command
 				std::vector<float > obd;//obstacle detect
 				Matrix cmatrix;			
-
-                std::vector<ESNForwardmodel*> esnFMs;// ESN forward models
 };
 #endif
