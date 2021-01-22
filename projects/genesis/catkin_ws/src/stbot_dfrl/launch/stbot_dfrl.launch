@@ -22,7 +22,7 @@
 
     <!-- If to debug, add  launch-prefix='gdb -ex run - - args'  in this follow table  / -->
 
-    <node machine="$(arg hostname)" name="control_node" pkg="stbot_dfrl" type="stbot_dfrl_node" required="true" output="screen" args="$(arg stbot_dfrl)" /> 
+    <node machine="$(arg hostname)" name="control_node" pkg="stbot_dfrl" type="stbot_dfrl_node" required="true" output="screen" args="$(arg stbot_dfrl)"  /> 
 
 
 </launch>

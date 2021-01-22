@@ -10,11 +10,8 @@
 #include <iostream>
 #include <stdio.h>
 #include <time.h>
-//#include "utils/sim_robots/stbot/stdogbot/dogbotsensormotordefinition.h"
 #include "learning-tool/lowPassfilter.h"
 #include "learning-tool/movingAverage.h"
-#include "learning-tool/autoNeuralConnection.h"
-#include "learning-tool/frequencyAdaptationBasedVes.h"
 #include "genesis-ann-library/manipulation.h"
 #include "modularNeural.h"
 
@@ -103,6 +100,7 @@ namespace stcontroller{
             this->sensor_num =sensor_num;
             this->param_num =param_num;
             this->pose_num = pose_num;
+
             stJ1Input.resize(leg_num);
             stPsnInput.resize(leg_num);
             stVrnHipInput.resize(leg_num);
@@ -202,14 +200,8 @@ namespace stcontroller{
 
         private:
             ModularNeural *mnc;
-            AutoNeuralConnection *anc;
-            FrequencyAdaptationBasedVes *FAVes;
-            Manipulation *manipulator;
         private:
-            Matrix ANC_RP;// motion phase differences between legs's movement
-            Matrix ANC_RP_NC;// autonomous neural connection between CPGs
             CPGSTYPE CPGSType;//get CPGType from outside of controller
-            parameter ANCstability;//the stability of motion phase differences
 
         protected:
 
@@ -230,8 +222,6 @@ namespace stcontroller{
             std::vector<lowPass_filter *> filterVoltage;
             std::vector<lowPass_filter *> filterPose;
             std::vector<lowPass_filter *> filterGRF;
-            MovingAverage * movingFilterPitch;
-            MovingAverage * movingFilterRoll;
 
 
             // post processing value of sensor value

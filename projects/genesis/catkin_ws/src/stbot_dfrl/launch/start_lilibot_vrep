@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 
 #path_1=$0
 #path_2=${path_1%/*}
@@ -10,8 +10,8 @@
 current_path=$(cd `dirname $0`;pwd)
 link_node="/link_node_file.sh"
 # initial the rospack path
-package_env="./../../../devel/setup.sh"
-. ${package_env}
+package_env="/../../../devel/setup.sh"
+source ${current_path}${package_env}
 # build a link of the node
 . ${current_path}${link_node}
 

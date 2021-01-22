@@ -94,17 +94,31 @@ namespace stcontroller{
     }
 
     float DFRL::getPlasticWeight(unsigned int index){
-        assert(index<4);
+        assert(index<2);
         if(index==0)
             return getWeight(hidden_layer->getNeuron(0),input_layer->getNeuron(0));
-            //return input_layer->getOutput(0);
         else if(index==1)
             return getWeight(hidden_layer->getNeuron(0),input_layer->getNeuron(1));
-        else if (index==2)
-            return control_1;
-        else 
-            return control_2;
-        //return input_layer->getOutput(1);
+        else{
+            perror("DFRL output index error");
+            return 0;
+        }
+    }
+
+    float DFRL::getOutput(unsigned int index){
+        assert(index<3);
+        switch(index){
+            case 0:
+                return 0;
+            case 1:
+                return control_1;
+            case 2:
+                return control_2;
+            default:
+                perror("DFRL output index error");
+                return -1;
+
+        }
     }
 
 
