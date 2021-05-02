@@ -9,11 +9,10 @@ The DFRL is modular and independent of specific CPG format and can directly be e
 
 ## Framework
 
-The project is organized by five sub-folders including **controllers**, **projects**, **utils**, and **vrep-simulation**. 
+The project is organized by three sub-folders including **controllers**, **projects**, and **vrep-simulation**. 
 
 - **controllers** consists of the code of the control methods, including dfrl.cpp and dfrl.h
-- **project** contains the main.cpp of the project, and manage the software 
-- **utils** contain the fundamental library codes, i.e., artificial neural network codes.
+- **project** contains the main.cpp of the project, and manage the software
 - **vrep-simulation** stores the simulation model which is based on VREP.  It has two quadruped robots: Lilibot and Laikago
 
 
@@ -43,5 +42,8 @@ The project is organized by five sub-folders including **controllers**, **projec
 
 
 
+## Reference
+
+T. Sun, Z. Dai, and P. Manoonpong, Distributed-force-feeback-based reflex with online learning for adaptive quadruped motor control, Neural Networks, 2021.
 
 If you have any questions/doubts  about how to implement this project on your computer, you are welcomed to raise issues and email to me. My email address is suntao.hn@gmail.com

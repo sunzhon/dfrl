@@ -271,7 +271,7 @@ function sliderChange(ui,id,newVal)
         pluginNotFound=true
         while moduleName do
             moduleName,moduleVersion=sim.getModuleName(index)
-            if (moduleName=='RosInterface') then
+            if (moduleName=='ROSInterface') then
                 pluginNotFound=false
             end
             index=index+1

@@ -9,12 +9,10 @@ project(stbot_dfrl)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 SET (CMAKE_CXX_STANDARD 11)
-SET (GOROBOTS "./../../../../../")
 
 
-
-SET (CONTROLLERS "${GOROBOTS}/controllers")
-SET (UTILS "${GOROBOTS}/utils")
+SET (CONTROLLERS "./../../../../../controllers")
+SET (UTILS "${CONTROLLERS}/genesis/utils")
 
 #SET(DEFINES "-DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB")
 #SET(CXXFLAGS "-m64 -pipe -D_REENTRANT -fPIC ${DEFINES}")
@@ -149,7 +147,6 @@ set(CNAKE_VERBOSE_MAKEFILE ON)
 include_directories(
   "${catkin_INCLUDE_DIRS}"
   "${UTILS}"
-  "${GOROBOTS}"
   "${UTILS}/ann-framework"
   "${UTILS}/ann-library"
   "${CONTROLLERS}/genesis"

@@ -24,18 +24,18 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/contr
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/modularNeural.h
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/modularNeuroController.h
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/rosClass.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/neuron.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/synapse.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/psn.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/dilearn.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/matrix.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/motionPhaseStability.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/stdelayline.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/study-tool/FileOperator.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/study-tool/Log.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/neuron.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/synapse.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-library/psn.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-library/vrn.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-library/vrn.h
  /opt/ros/melodic/include/control_msgs/JointJog.h
  /opt/ros/melodic/include/geometry_msgs/Quaternion.h
  /opt/ros/melodic/include/geometry_msgs/Vector3.h
@@ -111,17 +111,17 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/contr
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/ExtensorReflex.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/ExtensorReflex.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/ExtensorReflex.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-library/vrn.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-library/vrn.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/FlexorReflex.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/FlexorReflex.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/FlexorReflex.h
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/NeuralForwardmodel.h
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/neuralpreprocessing.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/dlearn.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/GRFsDistribution.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/GRFsDistribution.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/GRFsDistribution.h
@@ -131,22 +131,22 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/contr
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/matrix.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/motionPhaseStability.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/movingAverage.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-library/vrn.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-library/vrn.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/LocalReflex.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/LocalReflex.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/LocalReflex.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/study-tool/ipcFifo.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/study-tool/plotData.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/NeuralForwardmodel.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/NeuralForwardmodel.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/NeuralForwardmodel.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/dlearn.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/dfrl.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/GRFsDistribution.h
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/dfrl.cpp
@@ -157,14 +157,14 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/contr
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/matrix.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/motionPhaseStability.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/movingAverage.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-library/vrn.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-library/vrn.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/doubleFunctionPcpg.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/doubleFunctionPcpg.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/doubleFunctionPcpg.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/esnForwardmodel.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/esnForwardmodel.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/esnForwardmodel.h
@@ -174,18 +174,18 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/contr
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/ftnn.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/ftnn.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/ftnn.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/ikinenn.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/ikinenn.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/ikinenn.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/lin.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/lin.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/lin.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/manipulation.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/manipulation.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/manipulation.h
@@ -194,9 +194,9 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/contr
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/matrix.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/motionPhaseStability.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/movingAverage.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-library/vrn.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-library/vrn.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/networkmatrix.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/networkmatrix.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/networkmatrix.h
@@ -205,21 +205,21 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/contr
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/neuralpreprocessing.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/neuralpreprocessing.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/neuralpreprocessing.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/pmn.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/pmn.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/pmn.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/synapticPlasticityCpg.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/synapticPlasticityCpg.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/synapticPlasticityCpg.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/matrix.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/stdelayline.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/neuron.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/neuron.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/touchReflex.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/neuralpreprocessing.h
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/touchReflex.cpp
@@ -227,21 +227,21 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/contr
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/dilearn.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/dlearn.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/lowPassfilter.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-library/vrn.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-library/vrn.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/vestibularReflex.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/vestibularReflex.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/vestibularReflex.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-library/vrn.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-library/vrn.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/adaptiveFeedbackGain.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/adaptiveFeedbackGain.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/adaptiveFeedbackGain.h
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/dlearn.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/autoNeuralConnection.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/autoNeuralConnection.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/autoNeuralConnection.h
@@ -253,26 +253,26 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/contr
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/delayneuron.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/delayneuron.h
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/stdelayline.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/dilearn.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/dilearn.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/dilearn.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/dlearn.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/dlearn.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/dlearn.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/dualIntegralLearner.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/dualIntegralLearner.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/dualIntegralLearner.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/forwardmodel.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/forwardmodel.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/forwardmodel.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/frequencyAdaptation.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/dilearn.h
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/dualIntegralLearner.h
@@ -283,8 +283,8 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/contr
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/postProcessing.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/study-tool/ipcFifo.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/study-tool/plotData.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/frequencyAdaptationBasedVes.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/dilearn.h
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/dualIntegralLearner.h
@@ -295,8 +295,8 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/contr
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/postProcessing.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/study-tool/ipcFifo.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/study-tool/plotData.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/legdelay.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/legdelay.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/legdelay.h
@@ -346,18 +346,18 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/contr
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/learning-tool/stdelayline.h
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/modularNeural.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/modularNeural.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/neuron.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/synapse.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/psn.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/vrn.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/dilearn.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/lowPassfilter.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/matrix.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/motionPhaseStability.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/movingAverage.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/stdelayline.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/neuron.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/synapse.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-library/psn.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-library/vrn.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/modularNeuroController.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/GRFsDistribution.h
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/genesis-ann-library/dfrl.h
@@ -379,16 +379,16 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/contr
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/modularNeural.h
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/modularNeuroController.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/modularNeuroController.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/neuron.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/synapse.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/psn.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/dilearn.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/matrix.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/motionPhaseStability.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/stdelayline.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/neuron.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/synapse.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-library/psn.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-library/vrn.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-library/vrn.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/rosClass.cpp.o
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/rosClass.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/rosClass.h
@@ -478,82 +478,82 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/contr
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/study-tool/ipcFifo.h
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/study-tool/plotData.cpp
  /home/suntao/workspace/stbot/dfrl/controllers/genesis/study-tool/plotData.h
-stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/utils/ann-framework/ann.cpp.o
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/ann.cpp
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/neuron.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/synapse.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/transferfunction.h
-stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/utils/ann-framework/backpropagation.cpp.o
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/backpropagation.cpp
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/backpropagation.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/neuron.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/synapse.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/transferfunction.h
-stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/utils/ann-framework/circann.cpp.o
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/circann.cpp
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/circann.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/transferfunction.h
-stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/utils/ann-framework/neuron.cpp.o
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/neuron.cpp
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/neuron.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/synapse.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/transferfunction.h
-stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/utils/ann-framework/synapse.cpp.o
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/neuron.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/synapse.cpp
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/synapse.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/transferfunction.h
-stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/utils/ann-library/adaptiveso2cpgsynplas.cpp.o
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/interpolator2d.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/adaptiveso2cpgsynplas.cpp
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/adaptiveso2cpgsynplas.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/extendedso2cpg.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/so2cpg.h
-stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/utils/ann-library/extendedso2cpg.cpp.o
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/neuron.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/synapse.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/interpolator2d.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/extendedso2cpg.cpp
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/extendedso2cpg.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/so2cpg.h
-stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/utils/ann-library/pcpg.cpp.o
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/pcpg.cpp
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/pcpg.h
-stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/utils/ann-library/pmn.cpp.o
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/pmn.cpp
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/pmn.h
-stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/utils/ann-library/psn.cpp.o
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/psn.cpp
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/psn.h
-stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/utils/ann-library/so2cpg.cpp.o
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/interpolator2d.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/so2cpg.cpp
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/so2cpg.h
-stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/utils/ann-library/vrn.cpp.o
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/vrn.cpp
- /home/suntao/workspace/stbot/dfrl/utils/ann-library/vrn.h
-stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/utils/interpolator2d.cpp.o
- /home/suntao/workspace/stbot/dfrl/utils/interpolator2d.cpp
- /home/suntao/workspace/stbot/dfrl/utils/interpolator2d.h
+stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/ann.cpp.o
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/ann.cpp
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/neuron.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/synapse.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/transferfunction.h
+stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/backpropagation.cpp.o
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/backpropagation.cpp
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/backpropagation.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/neuron.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/synapse.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/transferfunction.h
+stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/circann.cpp.o
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/circann.cpp
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/circann.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/transferfunction.h
+stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/neuron.cpp.o
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/neuron.cpp
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/neuron.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/synapse.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/transferfunction.h
+stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/synapse.cpp.o
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/neuron.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/synapse.cpp
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/synapse.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/transferfunction.h
+stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/adaptiveso2cpgsynplas.cpp.o
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/adaptiveso2cpgsynplas.cpp
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/adaptiveso2cpgsynplas.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/extendedso2cpg.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/so2cpg.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/interpolator2d.h
+stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/extendedso2cpg.cpp.o
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/extendedso2cpg.cpp
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/extendedso2cpg.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/so2cpg.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/neuron.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/synapse.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/interpolator2d.h
+stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/pcpg.cpp.o
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/pcpg.cpp
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/pcpg.h
+stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/pmn.cpp.o
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/pmn.cpp
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/pmn.h
+stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/psn.cpp.o
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/psn.cpp
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/psn.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
+stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/so2cpg.cpp.o
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/so2cpg.cpp
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/so2cpg.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/interpolator2d.h
+stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/vrn.cpp.o
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/vrn.cpp
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/ann-library/vrn.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
+stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/interpolator2d.cpp.o
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/interpolator2d.cpp
+ /home/suntao/workspace/stbot/dfrl/controllers/genesis/utils/interpolator2d.h
 stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/src/main.cpp.o
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/dilearn.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/matrix.h
@@ -561,12 +561,9 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/src/main.cpp.o
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/learning-tool/stdelayline.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/study-tool/FileOperator.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/study-tool/Log.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/ann.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/neuron.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/synapse.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-framework/transferfunction.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-library/psn.h
- /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../utils/ann-library/vrn.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/ann.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-framework/transferfunction.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/./../../../../../controllers/genesis/utils/ann-library/vrn.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/src/./../../../../../../controllers/genesis/controller.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/src/./../../../../../../controllers/genesis/genesis-ann-library/GRFsDistribution.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/src/./../../../../../../controllers/genesis/genesis-ann-library/dfrl.h
@@ -588,6 +585,9 @@ stbot_dfrl/CMakeFiles/stbot_dfrl_node.dir/src/main.cpp.o
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/src/./../../../../../../controllers/genesis/modularNeural.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/src/./../../../../../../controllers/genesis/modularNeuroController.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/src/./../../../../../../controllers/genesis/rosClass.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/src/./../../../../../../controllers/genesis/utils/ann-framework/neuron.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/src/./../../../../../../controllers/genesis/utils/ann-framework/synapse.h
+ /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/src/./../../../../../../controllers/genesis/utils/ann-library/psn.h
  /home/suntao/workspace/stbot/dfrl/projects/genesis/catkin_ws/src/stbot_dfrl/src/main.cpp
  /opt/ros/melodic/include/control_msgs/JointJog.h
  /opt/ros/melodic/include/geometry_msgs/Quaternion.h
