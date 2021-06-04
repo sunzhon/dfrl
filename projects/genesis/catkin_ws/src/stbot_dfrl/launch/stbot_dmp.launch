@@ -2,13 +2,21 @@
 
 <arg name="hostname" default="$(env ROS_HOSTNAME)"/>
 <arg name="user" default="$(env USER)" />
-<arg name="stbot" default="stbot" />
+<arg name="stbot_dfrl" default="stbot_dfrl" />
 
-<machine name="$(arg hostname)"  address="$(arg hostname)" env-loader="~/workspace/gorobots/projects/stbot/genesis/catkin_ws/src/stbot/config/stbot_env.zsh" user="$(arg user)" />
 
+<machine name="$(arg hostname)"  address="$(arg hostname)" env-loader="./../config/stbot_env.zsh" user="$(arg user)" />
+
+<rosparam file="$(find stbot_dfrl)/config/stbot_dmp.yaml" command="load" />
 <arg name="controller_args"			default="dmpNode" />
 
-<node machine="$(arg hostname)" name="dmp_node" pkg="stbot" type="stbot_dmp_node.py" required="true" output="screen" args="$(arg controller_args)" />
+<!-- include file="$(find stbot)/launch/stbot_cpg.launch"/-->
+
+
+<node machine="$(arg hostname)" name="control_node" pkg="stbot_dfrl" type="stbot_dfrl_node" required="true" output="screen" args="$(arg stbot_dfrl)"  /> 
+<node machine="$(arg hostname)" name="dmp_node" pkg="stbot_dfrl" type="stbot_dmp_node.py" required="true" output="screen" args="$(arg controller_args)" />
 
 </launch>
+
+
 

@@ -5,9 +5,11 @@
  sensor_num: 61
  
  controlParam: 
-     - MI
-     - PCPGBeta
      - CPGType
+     - CPGMi
+     - CPGPGain
+     - CPGPThreshold
+     - PCPGBeta
      - PSN_L1
      - VRN_hip_L1
      - VRN_knee_L1
@@ -33,42 +35,48 @@
      - MNB2_L4
      - MNB3_L4
 
- MI: 0.1
- PCPGBeta: 0.75
- CPGType: 4
 
+ CPGType: 4
+ CPGMi: 0.1
+ CPGPGain: 0.00
+ CPGPThreshold: 1000
+ PCPGBeta: 0.75
+
+ 
  PSN_L1: 0.0
  VRN_hip_L1: 0.04
  VRN_knee_L1: 0.04
+
+ MNB1_L1: 0.0
+ MNB2_L1: -0.2
+ MNB3_L1: -0.2
+
 
  PSN_L2: 0.0
  VRN_hip_L2: 0.04
  VRN_knee_L2: 0.04
 
+ MNB1_L2: 0.0
+ MNB2_L2: -0.2
+ MNB3_L2: -0.2
+
+
  PSN_L3: 0.0 
  VRN_hip_L3: 0.04
  VRN_knee_L3: 0.04
+
+ MNB1_L3: 0.0
+ MNB2_L3: -0.2
+ MNB3_L3: -0.2
+
 
  PSN_L4: 0.0 
  VRN_hip_L4: 0.04
  VRN_knee_L4: 0.04
 
- MNB1_L1: 0.0
- MNB2_L1: 0.0
- MNB3_L1: 0.0
-
- MNB1_L2: 0.0
- MNB2_L2: 0.0
- MNB3_L2: 0.0
-
- MNB1_L3: 0.0
- MNB2_L3: 0.0
- MNB3_L3: 0.0
-
  MNB1_L4: 0.0
- MNB2_L4: 0.0
- MNB3_L4: 0.0
-
+ MNB2_L4: -0.2
+ MNB3_L4: -0.2
 
  controlSubscribeTopic:
    - sensorValues
@@ -76,5 +84,6 @@
  controlAdvertiseTopic:
    - motorValues
    - neuroNetworkOutputs
+   - dmpValues
    
 

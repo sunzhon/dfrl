@@ -1,0 +1,80 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CanonicalSystem	cs.py	/^class CanonicalSystem:$/;"	c
+DMPs	dmp.py	/^class DMPs(object):$/;"	c
+DMPs_discrete	dmp_discrete.py	/^class DMPs_discrete(DMPs):$/;"	c
+DMPs_rhythmic	dmp_rhythmic.py	/^class DMPs_rhythmic(DMPs):$/;"	c
+__init__	cs.py	/^    def __init__(self, dt, ax=1.0, pattern="discrete"):$/;"	m	class:CanonicalSystem
+__init__	dmp.py	/^    def __init__($/;"	m	class:DMPs
+__init__	dmp_discrete.py	/^    def __init__(self, **kwargs):$/;"	m	class:DMPs_discrete
+__init__	dmp_rhythmic.py	/^    def __init__(self, **kwargs):$/;"	m	class:DMPs_rhythmic
+__init__	imitate_so2CPG.py	/^    def __init__(self,n_dmps):$/;"	m	class:dmpSO2CPG
+a	dmp_discrete.py	/^    a = plt.plot(path1 \/ path1[-1] * dmp.goal[0], "r--", lw=2)$/;"	v	class:DMPs_discrete
+a	imitate_so2CPG.py	/^    a = plt.plot(np.linspace(0,2*np.pi,len(out1)),out1, "r--", lw=2)$/;"	v
+ax2	cs.py	/^    ax2 = ax1.twinx()$/;"	v
+b	dmp_discrete.py	/^    b = plt.plot(path2 \/ path2[-1] * dmp.goal[1], "r--", lw=2)$/;"	v	class:DMPs_discrete
+b	imitate_so2CPG.py	/^    b = plt.plot(np.linspace(0,2*np.pi,len(out1)),out2, "r--", lw=2)$/;"	v
+check_offset	dmp.py	/^    def check_offset(self):$/;"	m	class:DMPs
+cs	cs.py	/^    cs = CanonicalSystem(dt=0.001, pattern="discrete")$/;"	v
+cs	cs.py	/^    cs = CanonicalSystem(dt=0.001, pattern="rhythmic")$/;"	v
+data	test.py	/^data = np.loadtxt(filename, dtype=float)       # 使用的数据类型$/;"	v
+ddy_track	imitate_so2CPG.py	/^    ddy_track = np.zeros((timesteps*4, n_dmps))$/;"	v
+dmp	dmp_discrete.py	/^    dmp = DMPs_discrete(dt=0.05, n_dmps=1, n_bfs=10, w=np.zeros((1, 10)))$/;"	v	class:DMPs_discrete
+dmpSO2CPG	imitate_so2CPG.py	/^class dmpSO2CPG():$/;"	c
+dmp_cpg	imitate_so2CPG.py	/^    dmp_cpg=dmpSO2CPG(n_dmps)$/;"	v
+dy_track	imitate_so2CPG.py	/^    dy_track = np.zeros((timesteps*4, n_dmps))$/;"	v
+err	cs.py	/^    err = np.zeros(timesteps)$/;"	v
+err_coup	cs.py	/^    err_coup = 1.0 \/ (1 + err)$/;"	v
+filename	test.py	/^filename = 'o1.txt'$/;"	v
+gen_centers	dmp_discrete.py	/^    def gen_centers(self):$/;"	m	class:DMPs_discrete
+gen_centers	dmp_rhythmic.py	/^    def gen_centers(self):$/;"	m	class:DMPs_rhythmic
+gen_front_term	dmp.py	/^    def gen_front_term(self, x, dmp_num):$/;"	m	class:DMPs
+gen_front_term	dmp_discrete.py	/^    def gen_front_term(self, x, dmp_num):$/;"	m	class:DMPs_discrete
+gen_front_term	dmp_rhythmic.py	/^    def gen_front_term(self, x, dmp_num):$/;"	m	class:DMPs_rhythmic
+gen_goal	dmp.py	/^    def gen_goal(self, y_des):$/;"	m	class:DMPs
+gen_goal	dmp_discrete.py	/^    def gen_goal(self, y_des):$/;"	m	class:DMPs_discrete
+gen_goal	dmp_rhythmic.py	/^    def gen_goal(self, y_des):$/;"	m	class:DMPs_rhythmic
+gen_psi	dmp.py	/^    def gen_psi(self):$/;"	m	class:DMPs
+gen_psi	dmp_discrete.py	/^    def gen_psi(self, x):$/;"	m	class:DMPs_discrete
+gen_psi	dmp_rhythmic.py	/^    def gen_psi(self, x):$/;"	m	class:DMPs_rhythmic
+gen_weights	dmp.py	/^    def gen_weights(self, f_target):$/;"	m	class:DMPs
+gen_weights	dmp_discrete.py	/^    def gen_weights(self, f_target):$/;"	m	class:DMPs_discrete
+gen_weights	dmp_rhythmic.py	/^    def gen_weights(self, f_target):$/;"	m	class:DMPs_rhythmic
+getOutput	imitate_so2CPG.py	/^    def getOutput(self,idx):$/;"	m	class:dmpSO2CPG
+imitate_path	dmp.py	/^    def imitate_path(self, y_des, plot=False):$/;"	m	class:DMPs
+max_index_1	imitate_so2CPG.py	/^    max_index_1=np.where(pout1_array==np.max(pout1_array))[0]$/;"	v
+n_bfs	dmp_discrete.py	/^    n_bfs = [10, 30, 50, 100, 10000]$/;"	v	class:DMPs_discrete
+n_bfs	imitate_so2CPG.py	/^    n_bfs = [1000]$/;"	v
+n_dmps	imitate_so2CPG.py	/^    n_dmps=2$/;"	v
+out1	imitate_so2CPG.py	/^    out1=[]$/;"	v
+out1	imitate_so2CPG.py	/^    out1=out1[100:]$/;"	v
+out1	imitate_so2CPG.py	/^    out1=out1[points_key[1]:points_key[2]]$/;"	v
+out2	imitate_so2CPG.py	/^    out2=[]$/;"	v
+out2	imitate_so2CPG.py	/^    out2=out2[100:]$/;"	v
+out2	imitate_so2CPG.py	/^    out2=out2[points_key[1]:points_key[2]]$/;"	v
+path1	dmp_discrete.py	/^    path1 = np.sin(np.arange(0, 1, 0.01) * 5)$/;"	v	class:DMPs_discrete
+path2	dmp_discrete.py	/^    path2 = np.zeros(path1.shape)$/;"	v	class:DMPs_discrete
+points_key	imitate_so2CPG.py	/^    points_key=[]$/;"	v
+pout1	imitate_so2CPG.py	/^    pout1=[]$/;"	v
+pout1_array	imitate_so2CPG.py	/^    pout1_array=np.array(pout1)$/;"	v
+reset_state	cs.py	/^    def reset_state(self):$/;"	m	class:CanonicalSystem
+reset_state	dmp.py	/^    def reset_state(self):$/;"	m	class:DMPs
+rollout	cs.py	/^    def rollout(self, **kwargs):$/;"	m	class:CanonicalSystem
+rollout	dmp.py	/^    def rollout(self, timesteps=None, **kwargs):$/;"	m	class:DMPs
+save_weights	dmp_rhythmic.py	/^    def save_weights(self,file_name):$/;"	m	class:DMPs_rhythmic
+so2	imitate_so2CPG.py	/^    so2=So2Oscillator(0.08);$/;"	v
+step	dmp.py	/^    def step(self, tau=1.0, error=0.0, external_force=None):$/;"	m	class:DMPs
+step	imitate_so2CPG.py	/^    def step(self):$/;"	m	class:dmpSO2CPG
+step_discrete	cs.py	/^    def step_discrete(self, tau=1.0, error_coupling=1.0):$/;"	m	class:CanonicalSystem
+step_nums	imitate_so2CPG.py	/^    step_nums=600$/;"	v
+step_rhythmic	cs.py	/^    def step_rhythmic(self, tau=1.0, error_coupling=1.0):$/;"	m	class:CanonicalSystem
+timesteps	cs.py	/^    timesteps = int(1.0 \/ 0.001)$/;"	v
+timesteps	imitate_so2CPG.py	/^    timesteps=628$/;"	v
+timesteps	imitate_so2CPG.py	/^    timesteps=628;#len(out1)$/;"	v
+x_track1	cs.py	/^    x_track1 = cs.rollout()$/;"	v
+x_track2	cs.py	/^    x_track2 = np.zeros(timesteps)$/;"	v
+y_track	imitate_so2CPG.py	/^    y_track = np.zeros((timesteps*4, n_dmps))$/;"	v

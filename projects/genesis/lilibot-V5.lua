@@ -39,7 +39,7 @@ function sliderChange(ui,id,newVal)
         --       if (buttonClickState_OpenMotor == true)
         --        then
         for i = 1, #joint_array do
-            data[i] = CPGData[i] 
+            data[i] = CPGData[i] + DMPData[i]
         end
 
         for i = 1, #joint_array do
@@ -54,8 +54,8 @@ function sliderChange(ui,id,newVal)
         CPGData=msg.data
     end
 
-    function setReflexMotorData(msg)
-        reflexData=msg.data
+    function setDMPMotorData(msg)
+        DMPData=msg.data
     end
 
     function graph_cb(msg)
@@ -294,13 +294,13 @@ function sliderChange(ui,id,newVal)
             local simulationStateName='simulationState'
             local neuroNetworkOutputName='neuroNetworkOutputs' 
             local sensorValueName='sensorValues'
-            local reflexMotorName= 'reflexValue'
+            local dmpMotorName= 'dmpValues'
 
             -- Create the subscribers
             cpgValueSub=simROS.subscribe('/'..cpgMotorName,'std_msgs/Float32MultiArray','setCPGMotorData')
             neuroNetworkOutputSub=simROS.subscribe('/'..neuroNetworkOutputName,'std_msgs/Float32MultiArray', 'graph_cb')
             -- Create the subscribers
-            reflexValueSub=simROS.subscribe('/'..reflexMotorName,'std_msgs/Float32MultiArray','setReflexMotorData')
+            dmpValueSub=simROS.subscribe('/'..dmpMotorName,'std_msgs/Float32MultiArray','setDMPMotorData')
 
             -- Create the publishers
             terminateControllerPub=simROS.advertise('/'..terminateControllerName,'std_msgs/Bool')
@@ -328,11 +328,11 @@ function sliderChange(ui,id,newVal)
 
         --Subscriber initial  data
         CPGData={}
-        reflexData={}
+        DMPData={}
 
         for i = 1, #joint_array do
             CPGData[i] = 0.0
-            reflexData[i] = 0.0
+            DMPData[i] = 0.0
         end
 
         -- init slide for adjust paramterts
@@ -468,7 +468,7 @@ function sliderChange(ui,id,newVal)
                     -- Terminate subscriber
                     simROS.shutdownSubscriber(neuroNetworkOutputSub)
                     simROS.shutdownSubscriber(cpgValueSub)
-                    simROS.shutdownSubscriber(reflexValueSub)
+                    simROS.shutdownSubscriber(dmpValueSub)
                     -- terminate publisher
                     simROS.shutdownPublisher(simulationTimePub)
                     simROS.shutdownPublisher(sensorValuePub)

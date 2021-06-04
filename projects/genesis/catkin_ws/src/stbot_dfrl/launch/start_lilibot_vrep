@@ -15,4 +15,8 @@ source ${current_path}${package_env}
 # build a link of the node
 . ${current_path}${link_node}
 
+#SO(2) CPG-based control with the DFRL
 roslaunch stbot_dfrl stbot_dfrl.launch
+
+#DMP-based control with the DFRL
+#roslaunch stbot_dfrl stbot_dmp.launch

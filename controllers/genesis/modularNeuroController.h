@@ -44,6 +44,8 @@ namespace stcontroller{
 
         //1.2) MI of CPG,beta of PCPG, two parameters and CPGSType and weather or not to set SP
         parameter stCPGMi;
+        parameter stCPGPGain;
+        parameter stCPGPThreshold;
         parameter stPCPGBeta;
         parameter stCPGSType;
         struct{
@@ -144,9 +146,11 @@ namespace stcontroller{
                 stMNBias3.at(i)=0.0;
             }
 
-            stCPGMi=0.0;//0.075;//CPG
-            stPCPGBeta=0.0;//PCPG
             stCPGSType=5.0;//get CPGSType
+            stCPGMi=0.0;//0.075;//CPG
+            stCPGPGain=0.0;
+            stCPGPThreshold=1000;
+            stPCPGBeta=0.0;//PCPG
             stsetCPGS.Type=stCPGSType;// set CPGSType
             stsetCPGS.State=false;// set CPGSType
 

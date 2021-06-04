@@ -88,6 +88,7 @@ namespace stcontroller {
 
     }
 
+/*
     void ModularNeuroController::setParameters(const std::vector<float>& param){
         assert(param.size()==conf.param_num);
         conf.stCPGMi=param[0];
@@ -121,7 +122,48 @@ namespace stcontroller {
             param[6*i+3+5]=conf.stMNBias3.at(i);
         }
 
+    }
+
+*/
+
+    void ModularNeuroController::setParameters(const std::vector<float>& param){
+        assert(param.size()==conf.param_num);
+        conf.stCPGSType=param[0];
+        conf.stCPGMi=param[1];
+        conf.stCPGPGain=param[2];
+        conf.stCPGPThreshold=param[3];
+        conf.stPCPGBeta=param[4];
+        for(unsigned int i=0;i<conf.leg_num;i++){
+            conf.stPsnInput.at(i)=param[6*i+5];
+            conf.stVrnHipInput.at(i)=param[6*i+6];
+            conf.stVrnKneeInput.at(i)=param[6*i+7];
+
+            conf.stMNBias1.at(i)=param[6*i + 8]; 
+            conf.stMNBias2.at(i)=param[6*i + 9]; 
+            conf.stMNBias3.at(i)=param[6*i + 10];
+        }
     }   
+
+    void ModularNeuroController::getParameters(std::vector<float>& param)const{
+        assert(param.size()==conf.param_num);
+        param[0] = conf.stCPGSType;
+        param[1] = conf.stCPGMi;
+        param[2] = conf.stCPGPGain;
+        param[3] = conf.stCPGPThreshold;
+        param[4] = conf.stPCPGBeta;
+
+        for(unsigned int i=0;i<conf.leg_num;i++){
+            param[6*i+5]=conf.stPsnInput.at(i);
+            param[6*i+6]=conf.stVrnHipInput.at(i);
+            param[6*i+7]=conf.stVrnKneeInput.at(i);
+
+            param[6*i+8]=conf.stMNBias1.at(i);
+            param[6*i+9]=conf.stMNBias2.at(i);
+            param[6*i+10]=conf.stMNBias3.at(i);
+        }
+    }  
+
+
 
     //implement controller here
     void ModularNeuroController::step(const parameter* x_, int number_sensors, parameter* y_, int number_motors) {
